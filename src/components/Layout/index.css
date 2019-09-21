@@ -1,6 +1,11 @@
-@import "../../styles/breakpoints.css";
+@import '../../styles/breakpoints.css';
+@import '../../styles/variables.css';
 
 .root {
+  max-width: var(--grid-size);
+  margin-right: auto;
+  margin-left: auto;
+
   box-sizing: content-box;
   padding: 32px;
 

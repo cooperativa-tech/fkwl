@@ -1,0 +1,17 @@
+@import '../styles/variables.css';
+
+.textBlock {
+  margin-bottom: var(--size-36);
+}
+
+.bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.section {
+  margin-bottom: var(--size-36);
+}
+
+.text.bold {
+  margin-bottom: var(--size-36);
+}
