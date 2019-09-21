@@ -13,6 +13,10 @@ function SEO({ title, description, keywords }) {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content="logo.png" />
+      <link
+        href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
+        rel="stylesheet"
+      />
     </Helmet>
   );
 }
@@ -20,7 +24,7 @@ function SEO({ title, description, keywords }) {
 SEO.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  keywords: PropTypes.string.isRequired,
+  keywords: PropTypes.string.isRequired
 };
 
 export default SEO;

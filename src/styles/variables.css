@@ -1,0 +1,25 @@
+:root {
+  --size-4: 4px;
+  --size-8: 8px;
+  --size-12: 12px;
+  --size-16: 16px;
+  --size-20: 20px;
+  --size-28: 28px;
+  --size-36: 36px;
+  --size-48: 48px;
+  --size-64: 64px;
+  --size-84: 84px;
+  --size-112: 112px;
+  --size-148: 148px;
+
+  --font-family-nunito: 'Nunito', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  --gutter: 20px;
+  --cell-length: 89px;
+  --grid-size: 1440px;
+
+  @custom-media --tablet-breakpoint (min-width: 700px);
+  @custom-media --background-breakpoint (min-width: 1024px);
+}

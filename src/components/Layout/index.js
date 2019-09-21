@@ -1,10 +1,16 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
+import SEO from 'root/components/SEO';
 
-import "./index.css";
+import './index.css';
 
-function Layout({ children }) {
-  return <div styleName="root">{children}</div>;
+function Layout({children}) {
+  return (
+    <div styleName="root">
+      <SEO title="From Kibera with love" />
+      {children}
+    </div>
+  );
 }
 
 Layout.propTypes = {
