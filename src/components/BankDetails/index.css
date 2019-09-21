@@ -1,8 +1,8 @@
 @import '../../styles/variables.css';
 
 .root {
-  font-size: var(--size-20);
-  line-height: var(--size-28);
+  font-size: var(--size-24);
+  line-height: var(--size-32);
   font-family: var(--font-family-nunito);
   width: 100%;
   max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
@@ -11,7 +11,7 @@
 }
 
 .textBlock {
-  margin-bottom: var(--size-36);
+  margin-bottom: var(--size-32);
 }
 
 .bold {
@@ -19,11 +19,10 @@
 }
 
 .section {
-  margin: 100px;
-  background-color: pink;
+  margin: 32px;
 }
 
 .text.bold {
   font-weight: var(--font-weight-bold);
-  margin-bottom: var(--size-36);
+  margin-bottom: var(--size-32);
 }

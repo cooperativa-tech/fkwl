@@ -2,21 +2,20 @@
   --size-4: 4px;
   --size-8: 8px;
   --size-12: 12px;
-  --size-16: 16px;
   --size-20: 20px;
-  --size-28: 28px;
-  --size-36: 36px;
-  --size-48: 48px;
-  --size-64: 64px;
-  --size-84: 84px;
-  --size-112: 112px;
-  --size-148: 148px;
+  --size-24: 24px;
+  --size-32: 32px;
+  --size-44: 44px;
+  --size-56: 56px;
+  --size-76: 76px;
+  --size-100: 100px;
+  --size-132: 132px;
 
   --font-family-nunito: 'Nunito', sans-serif;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
 
-  --gutter: 20px;
+  --gutter: 24px;
   --cell-length: 89px;
   --grid-size: 1440px;
 

@@ -1,7 +1,7 @@
 @import '../styles/variables.css';
 
 .textBlock {
-  margin-bottom: var(--size-36);
+  margin-bottom: var(--size-32);
 }
 
 .bold {
@@ -9,9 +9,23 @@
 }
 
 .section {
-  margin-bottom: var(--size-36);
+  margin-bottom: var(--size-32);
 }
 
 .text.bold {
-  margin-bottom: var(--size-36);
+  margin-bottom: var(--size-32);
+}
+
+.imageSection {
+  position: relative;
+  margin-top: var(--size-100);
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  z-index: 100;
+  position: absolute;
+  left: -97px;
+  top: -79px;
 }

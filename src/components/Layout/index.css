@@ -2,6 +2,10 @@
 @import '../../styles/variables.css';
 
 .root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   max-width: var(--grid-size);
   margin-right: auto;
   margin-left: auto;

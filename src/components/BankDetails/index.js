@@ -1,10 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Text from "root/components/Text";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Text from 'root/components/Text';
 
-import "./index.css";
+import './index.css';
 
-const BankDetails = ({ nib, iban, swift }) => {
+const BankDetails = ({nib, iban, swift}) => {
   return (
     <Text>
       <div styleName="textBlock">
@@ -29,7 +29,7 @@ const BankDetails = ({ nib, iban, swift }) => {
 BankDetails.propTypes = {
   nib: PropTypes.string.isRequired,
   nif: PropTypes.string.isRequired,
-  swift: PropTypes.string.isRequired
+  swift: PropTypes.string.isRequired,
 };
 
 export default BankDetails;

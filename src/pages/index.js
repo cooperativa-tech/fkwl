@@ -1,20 +1,19 @@
-import React from "react";
+import React from 'react';
 
-import BankDetails from "root/components/BankDetails";
-import Text from "root/components/Text";
-import Header from "root/components/Header";
-import Image from "root/components/Image";
-import Layout from "root/components/Layout";
+import BankDetails from 'root/components/BankDetails';
+import Text from 'root/components/Text';
+import Image from 'root/components/Image';
+import Layout from 'root/components/Layout';
 
 /* eslint-disable */
-import photo from "!file-loader!../assets/fkwl_kid.jpg";
+import photo from '!file-loader!../assets/fkwl_kid.jpg';
+import logo from '!file-loader!../assets/fkwl-logo.svg';
 /* eslint-enable */
 
-import "./index.css";
+import './index.css';
 
 const IndexPage = () => (
   <Layout>
-    <Header />
     <Text>
       <div styleName="textBlock">Olá,</div>
       <div styleName="textBlock">
@@ -44,7 +43,7 @@ const IndexPage = () => (
       iban="PT 065 0924 00195900000 75"
       swift="BESZ PT PL"
     />
-    <Text>
+    <Text styleName="section">
       <div styleName="textBlock">
         E aqui podes encontrar mais informação sobre nós:
       </div>
@@ -55,7 +54,12 @@ const IndexPage = () => (
       Asante Sana(Muito obrigado),
       <p>From Kibera with Love</p>
     </Text>
-    <Image src={photo} alt="Happy kid fkwl" />
+    <div styleName="imageSection ">
+      <div styleName="logo">
+        <Image src={logo} alt="From Kibera With Love Logo" />
+      </div>
+      <Image src={photo} alt="Happy kid fkwl" />
+    </div>
   </Layout>
 );
 

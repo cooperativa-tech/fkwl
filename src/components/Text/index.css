@@ -1,8 +1,8 @@
 @import '../../styles/variables.css';
 
 .root {
-  font-size: var(--size-20);
-  line-height: var(--size-28);
+  font-size: var(--size-24);
+  line-height: var(--size-32);
   font-family: var(--font-family-nunito);
   width: 100%;
   max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
