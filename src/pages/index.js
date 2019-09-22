@@ -7,8 +7,8 @@ import Image from "root/components/Image";
 import Layout from "root/components/Layout";
 
 /* eslint-disable */
-import photo from "!file-loader!../assets/fkwl_kid.jpg";
-import logo from "!file-loader!../assets/fkwl-logo.svg";
+import photo from "!file-loader!../assets/photoKidFkwl.jpg";
+import logo from "!file-loader!../assets/logoFkwl.svg";
 /* eslint-enable */
 
 import "./index.css";
