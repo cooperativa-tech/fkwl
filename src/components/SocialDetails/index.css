@@ -5,15 +5,18 @@
 }
 
 .textBlock a {
-  color: var(--color-red);
   margin-left: 20px;
+
+  color: var(--color-red);
+
   text-decoration: none;
 }
 
 .bold {
+  position: relative;
+
   display: flex;
   flex-direction: row;
-  position: relative;
 
   font-weight: var(--font-weight-bold);
 }
@@ -23,8 +26,9 @@
 }
 
 .text.bold {
-  font-weight: var(--font-weight-bold);
   margin-bottom: var(--size-32);
+
+  font-weight: var(--font-weight-bold);
 }
 
 .logo {

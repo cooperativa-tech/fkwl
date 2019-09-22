@@ -1,20 +1,23 @@
 @import '../../styles/variables.css';
 
 .header {
-  color: var(--color-grey);
-  width: calc(11 * var(--cell-length) + 10 * var(--gutter));
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: var(--size-20);
-  font-family: var(--font-family-nunito);
+  width: calc(11 * var(--cell-length) + 10 * var(--gutter));
   margin-bottom: 132px;
+
+  color: var(--color-grey);
+
+  font-family: var(--font-family-nunito);
+  font-size: var(--size-20);
 }
 
 .navbarLinks {
-  font-weight: var(--font-weight-bold);
   display: flex;
   flex-direction: row;
+
+  font-weight: var(--font-weight-bold);
 }
 
 .navbarLinks :hover {
@@ -22,14 +25,15 @@
 }
 
 .navbarLinks a {
-  cursor: pointer;
-  text-decoration: none;
   color: inherit;
+  cursor: pointer;
+
+  text-decoration: none;
 }
 
 .separator {
-  margin-left: var(--size-8);
   margin-right: var(--size-8);
+  margin-left: var(--size-8);
 }
 
 .linkPt {
@@ -37,6 +41,6 @@
 }
 
 .linkEn {
-  margin-left: var(--size-8);
   margin-right: var(--size-56);
+  margin-left: var(--size-8);
 }

@@ -13,6 +13,7 @@
 }
 
 .text.bold {
-  font-weight: var(--font-weight-bold);
   margin-bottom: var(--size-32);
+
+  font-weight: var(--font-weight-bold);
 }
