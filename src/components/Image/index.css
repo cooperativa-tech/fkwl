@@ -3,3 +3,6 @@
 .imageWrapper {
   position: relative;
 }
+.imageStyle {
+  width: 100%;
+}

@@ -18,14 +18,20 @@
 
 .imageSection {
   position: relative;
-  margin-top: var(--size-100);
+
   display: flex;
   justify-content: center;
+  max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
+  margin-top: var(--size-100);
 }
 
 .logo {
-  z-index: 100;
   position: absolute;
-  left: -97px;
   top: -79px;
+  left: -97px;
+  z-index: 100;
+}
+
+.gif {
+  width: 10px !important;
 }

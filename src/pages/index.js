@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react';
 
-import BankDetails from "root/components/BankDetails";
-import SocialDetails from "root/components/SocialDetails";
-import Text from "root/components/Text";
-import Image from "root/components/Image";
-import Layout from "root/components/Layout";
+import BankDetails from 'root/components/BankDetails';
+import SocialDetails from 'root/components/SocialDetails';
+import Text from 'root/components/Text';
+import Image from 'root/components/Image';
+import Layout from 'root/components/Layout';
 
 /* eslint-disable */
-import photo from "!file-loader!../assets/photoKidFkwl.jpg";
-import logo from "!file-loader!../assets/logoFkwl.svg";
+import fkwlGif from '../assets/fkwlGif.gif';
+import logo from '!file-loader!../assets/logoFkwl.svg';
 /* eslint-enable */
 
-import "./index.css";
+import './index.css';
 
 const IndexPage = () => (
   <Layout>
@@ -49,7 +49,7 @@ const IndexPage = () => (
       <div styleName="logo">
         <Image src={logo} alt="From Kibera With Love Logo" />
       </div>
-      <Image src={photo} alt="Happy kid fkwl" />
+      <Image src={fkwlGif} alt="Happy kid fkwl" />
     </div>
   </Layout>
 );
