@@ -4,7 +4,17 @@
   margin-bottom: var(--size-32);
 }
 
+.textBlock a {
+  color: var(--color-red);
+  margin-left: 20px;
+  text-decoration: none;
+}
+
 .bold {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
   font-weight: var(--font-weight-bold);
 }
 
@@ -15,4 +25,8 @@
 .text.bold {
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--size-32);
+}
+
+.logo {
+  margin-right: 20px;
 }

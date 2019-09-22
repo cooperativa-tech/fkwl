@@ -1,16 +1,17 @@
-import React from 'react';
+import React from "react";
 
-import BankDetails from 'root/components/BankDetails';
-import Text from 'root/components/Text';
-import Image from 'root/components/Image';
-import Layout from 'root/components/Layout';
+import BankDetails from "root/components/BankDetails";
+import SocialDetails from "root/components/SocialDetails";
+import Text from "root/components/Text";
+import Image from "root/components/Image";
+import Layout from "root/components/Layout";
 
 /* eslint-disable */
-import photo from '!file-loader!../assets/fkwl_kid.jpg';
-import logo from '!file-loader!../assets/fkwl-logo.svg';
+import photo from "!file-loader!../assets/fkwl_kid.jpg";
+import logo from "!file-loader!../assets/fkwl-logo.svg";
 /* eslint-enable */
 
-import './index.css';
+import "./index.css";
 
 const IndexPage = () => (
   <Layout>
@@ -43,17 +44,7 @@ const IndexPage = () => (
       iban="PT 065 0924 00195900000 75"
       swift="BESZ PT PL"
     />
-    <Text styleName="section">
-      <div styleName="textBlock">
-        E aqui podes encontrar mais informação sobre nós:
-      </div>
-      <div styleName="textBlock">
-        <p styleName="bold">Facebook</p>
-        <p styleName="bold">Instagram </p>
-      </div>
-      Asante Sana(Muito obrigado),
-      <p>From Kibera with Love</p>
-    </Text>
+    <SocialDetails />
     <div styleName="imageSection ">
       <div styleName="logo">
         <Image src={logo} alt="From Kibera With Love Logo" />

@@ -1,4 +1,6 @@
 :root {
+  --color-red: #c51936;
+
   --size-4: 4px;
   --size-8: 8px;
   --size-12: 12px;
@@ -16,7 +18,7 @@
   --font-weight-bold: 700;
 
   --gutter: 24px;
-  --cell-length: 89px;
+  --cell-length: 76px;
   --grid-size: 1440px;
 
   @custom-media --tablet-breakpoint (min-width: 700px);
