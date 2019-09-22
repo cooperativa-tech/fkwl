@@ -1,6 +1,7 @@
 @import '../../styles/variables.css';
 
 .root {
+  color: var(--color-grey);
   font-size: var(--size-24);
   line-height: var(--size-32);
   font-family: var(--font-family-nunito);

@@ -1,5 +1,6 @@
 :root {
   --color-red: #c51936;
+  --color-grey: #3F4446;
 
   --size-4: 4px;
   --size-8: 8px;
@@ -15,7 +16,7 @@
 
   --font-family-nunito: 'Nunito', sans-serif;
   --font-weight-regular: 400;
-  --font-weight-bold: 700;
+  --font-weight-bold: 800;
 
   --gutter: 24px;
   --cell-length: 76px;
