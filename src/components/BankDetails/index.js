@@ -1,14 +1,14 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Text from "root/components/Text";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Text from 'root/components/Text';
 
-import "./index.css";
+import './index.css';
 
 const BankDetails = ({ nib, iban, swift }) => {
   return (
     <Text>
       <div styleName="textBlock">
-        Para donativos, aqui está a informação que precisas:
+        For donations, here’s the info you’ll need:
         <div styleName="">
           <span styleName="bold"> NIB:</span>
           {nib}

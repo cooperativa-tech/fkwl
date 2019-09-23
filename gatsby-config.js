@@ -1,40 +1,47 @@
-const path = require("path");
+const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://example.com",
-    title: "Gatsby base starter",
-    author: "Aurora Digital",
+    siteUrl: 'https://example.com',
+    title: 'Gatsby base starter',
+    author: 'Aurora Digital',
     description:
-      "A gatsby starter with ESLint, Prettier, Stylelint, Postcss modules and analytics",
-    keywords: "gatsby, starter, eslint, postcss, analytics",
+      'A gatsby starter with ESLint, Prettier, Stylelint, Postcss modules and analytics',
+    keywords: 'gatsby, starter, eslint, postcss, analytics'
   },
   plugins: [
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-postcss",
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-postcss',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "assets",
-        path: `${__dirname}/src/assets/`,
-      },
+        name: 'assets',
+        path: `${__dirname}/src/assets/`
+      }
     },
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-sharp",
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: "trackingIDhere",
+        trackingId: 'trackingIDhere',
         head: true,
-        anonymize: true,
-      },
+        anonymize: true
+      }
     },
     {
-      resolve: "gatsby-plugin-root-import",
+      resolve: 'gatsby-plugin-i18n',
       options: {
-        root: path.join(__dirname, "src"),
-      },
+        langKeyDefault: 'en',
+        useLangKeyLayout: false
+      }
     },
-    "gatsby-plugin-sitemap",
-  ],
+    {
+      resolve: 'gatsby-plugin-root-import',
+      options: {
+        root: path.join(__dirname, 'src')
+      }
+    },
+    'gatsby-plugin-sitemap'
+  ]
 };

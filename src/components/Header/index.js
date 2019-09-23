@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import { Link } from "gatsby";
-import Image from "../Image";
+import { Link } from 'gatsby';
+import Image from '../Image';
 
 /* eslint-disable */
-import logoNavbar from "!file-loader!../../assets/logoNavbar.svg";
+import logoNavbar from '!file-loader!../../assets/logoNavbar.svg';
 
-import "./index.css";
+import './index.css';
 
 const Header = () => {
   return (
@@ -16,11 +16,11 @@ const Header = () => {
         <Link styleName="linkPt" to="/">
           Pt
         </Link>
-        {"/"}
-        <Link styleName="linkEn" to="/">
+        {'/'}
+        <Link styleName="linkEn" to="/en">
           En
         </Link>
-        <Link to="/">Contacte-nos</Link>{" "}
+        <Link to="/">Contacte-nos</Link>{' '}
       </div>
     </div>
   );

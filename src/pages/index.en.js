@@ -16,26 +16,27 @@ import './index.css';
 const IndexPage = () => (
   <Layout>
     <Text>
-      <div styleName="textBlock">Olá,</div>
+      <div styleName="textBlock">Hi,</div>
       <div styleName="textBlock">
-        O <span styleName="bold">From Kibera With Love</span> é um projeto
-        criado pela portuguesa Marta Baeta em Janeiro de 2013 que tem como
-        objetivo dar oportunidades de crescimento a crianças de Kibera, uma das
-        maiores favelas do mundo.
+        <span styleName="bold">From Kibera With Love</span>is a project created
+        by Marta Baeta in January 2013 with the goal of providing growth
+        opportunities for the children of Kibera, on of the world’s biggest
+        slums.
       </div>
       <div styleName="textBlock">
-        No Quénia ter-se acesso à educação é um luxo e a maioria das crianças de
-        Kibera não tem essa sorte, simplesmente porque muitas delas não têm uma
-        família que consiga assegurar o seu futuro.
+        In Kenya, having access to education is a luxury that most children
+        can’t afford, simply because most of them don’t have a family that can
+        ensure their future.
       </div>
       <div styleName="textBlock">
-        Graças a amigos, conhecidos e estranhos que rapidamente se tornam
-        amigos, conseguimos garantir educação a mais de 100 crianças.
+        Thanks to our friends, acquaintances and strangers who rapidly became
+        friends, we are already able to ensure the education of over 100
+        children.
       </div>
     </Text>
     <Text>
       <div styleName="textBlock">
-        Para falar connosco, envia-nos um email para:
+        To get in touch, email us at hello@fromkiberawithlove.com.
         <p styleName="bold text ">hello@fromkiberawithlove.com</p>
       </div>
     </Text>
@@ -45,11 +46,9 @@ const IndexPage = () => (
       swift="BESZ PT PL"
     />
     <Text>
-      <div styleName="textBlock">
-        E aqui podes encontrar mais informação sobre nós:
-      </div>
+      <div styleName="textBlock">And you’ll find more info about us here:</div>
       <SocialDetails />
-      Asante Sana(Muito obrigado),
+      Asante Sana(Thank you very much),
       <p>From Kibera with Love</p>
     </Text>
     <div styleName="imageSection ">
