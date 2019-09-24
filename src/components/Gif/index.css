@@ -1,0 +1,41 @@
+@import '../../styles/variables.css';
+
+.root {
+  width: 100%;
+  max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
+}
+
+.imageWrapper {
+  position: relative;
+  z-index: 100;
+
+  width: 100%;
+}
+
+.gifWrapper {
+  z-index: 0;
+
+  width: 100%;
+}
+
+.gifWrapper img {
+  z-index: 0;
+
+  width: 100%;
+}
+
+.imageWrapper img {
+  position: absolute;
+  top: -26px;
+  left: -29px;
+  z-index: 100;
+
+  width: 112px;
+
+  @media (--desktop-breakpoint) {
+    top: -79px;
+    left: -97px;
+
+    width: 180px;
+  }
+}

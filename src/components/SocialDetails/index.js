@@ -15,11 +15,11 @@ const SocialDetails = () => {
           <Logo src={logoFacebook} alt="From Kibera With Love Logo" />
           <a href="https://www.instagram.com/fromkiberawithlove/">Facebook</a>
         </div>
-        <div styleName="textBlock">
-          <div styleName="bold">
-            <Logo src={logoInstagram} alt="From Kibera With Love Logo" />
-            <a href="https://www.facebook.com/FromKiberaWithLove">Instagram</a>
-          </div>
+      </div>
+      <div styleName="textBlock">
+        <div styleName="bold">
+          <Logo src={logoInstagram} alt="From Kibera With Love Logo" />
+          <a href="https://www.facebook.com/FromKiberaWithLove">Instagram</a>
         </div>
       </div>
     </>

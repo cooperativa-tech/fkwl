@@ -1,10 +1,10 @@
 module.exports = {
   plugins: {
-    "postcss-import": {},
+    'postcss-import': {},
     precss: {},
-    "postcss-modules": {
+    'postcss-modules': {
       getJSON: () => {},
-      generateScopedName: "[folder]__[local]__[hash]",
-    },
-  },
+      generateScopedName: '[folder]__[local]__[hash]'
+    }
+  }
 };

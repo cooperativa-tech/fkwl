@@ -2,13 +2,20 @@
 
 .root {
   width: 100%;
-  max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
+  max-width: calc(4 * var(--cell-length) + 3 * var(--gutter));
   margin: 0 auto;
   overflow: hidden;
 
   color: var(--color-grey);
 
   font-family: var(--font-family-nunito);
-  font-size: var(--size-24);
-  line-height: var(--size-32);
+  font-size: var(--size-20);
+  line-height: var(--size-24);
+
+  @media (min-width: 700px) {
+    max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
+
+    font-size: var(--size-24);
+    line-height: var(--size-32);
+  }
 }

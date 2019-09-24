@@ -11,7 +11,7 @@ const Logo = ({ src, alt }) => (
 
 Logo.propTypes = {
   src: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired
+  alt: PropTypes.string.isRequired,
 };
 
 export default Logo;

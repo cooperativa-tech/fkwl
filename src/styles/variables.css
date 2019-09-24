@@ -26,5 +26,5 @@
   --grid-size: 1440px;
 
   @custom-media --tablet-breakpoint (min-width: 700px);
-  @custom-media --background-breakpoint (min-width: 1024px);
+  @custom-media --desktop-breakpoint (min-width: 1024px);
 }

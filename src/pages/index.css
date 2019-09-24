@@ -1,6 +1,7 @@
 @import '../styles/variables.css';
 
 .textBlock {
+  max-width: calc(6 * var(--cell-length) + 6 * var(--gutter));
   margin-bottom: var(--size-32);
 }
 
@@ -21,21 +22,35 @@
 
   display: flex;
   justify-content: center;
-  max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
-  margin-top: var(--size-100);
+  max-width: calc(3 * var(--cell-length) + 4 * var(--gutter));
+  margin-top: var(--size-32);
+  margin-bottom: var(--size-32);
+
+  @media (min-width: 700px) {
+    max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
+    margin-top: var(--size-100);
+  }
 }
 
 .logo {
   position: absolute;
-  top: -79px;
-  left: -97px;
+  top: -30px;
+  left: -20px;
   z-index: 100;
-}
 
-.gif {
-  width: 10px !important;
+  width: 112px;
+
+  @media (min-width: 700px) {
+    top: -79px;
+    left: -97px;
+
+    width: 180px;
+  }
 }
 
 .kid {
-  width: calc(7 * var(--cell-length) + 6 * var(--gutter));
+  width: calc(4 * var(--cell-length) + 4 * var(--gutter));
+  @media (min-width: 700px) {
+    width: calc(7 * var(--cell-length) + 6 * var(--gutter));
+  }
 }

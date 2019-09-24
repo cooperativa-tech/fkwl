@@ -7,6 +7,7 @@ import BankDetails from 'root/components/BankDetails';
 import SocialDetails from 'root/components/SocialDetails';
 import Text from 'root/components/Text';
 import Logo from 'root/components/Logo';
+import Header from 'root/components/Header';
 import Layout from 'root/components/Layout';
 
 /* eslint-disable */
@@ -19,7 +20,7 @@ import './index.css';
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "phtoKidFkwl.jpg" }) {
+      file(relativePath: { eq: "photoKidFkwl.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1200, quality: 95) {
             ...GatsbyImageSharpFluid_withWebp
@@ -31,12 +32,11 @@ const IndexPage = () => {
 
   return (
     <Layout>
+      <Header />
       <Text>
         <div styleName="textBlock">Olá,</div>
         <div styleName="textBlock">
-          O
-          <span styleName="bold"> From Kibera With Love </span>
-          é um projeto
+          O <span styleName="bold"> From Kibera With Love </span>é um projeto
           criado pela portuguesa Marta Baeta em Janeiro de 2013 que tem como
           objetivo dar oportunidades de crescimento a crianças de Kibera, uma
           das maiores favelas do mundo.
@@ -74,9 +74,6 @@ const IndexPage = () => {
         <div styleName="logo">
           <Logo src={logo} alt="From Kibera With Love Logo" />
         </div>
-        <Logo src={fkwlGif} alt="Kibera students" />
-      </div>
-      <div styleName="imageSection">
         <Image
           styleName="kid"
           fluid={data.file.childImageSharp.fluid}

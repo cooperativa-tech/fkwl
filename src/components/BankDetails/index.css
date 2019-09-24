@@ -2,6 +2,14 @@
 
 .textBlock {
   margin-bottom: var(--size-32);
+
+  font-size: var(--size-20);
+  line-height: var(--size-24);
+
+  @media (--desktop-breakpoint) {
+    font-size: var(--size-24);
+    line-height: var(--size-32);
+  }
 }
 
 .bold {

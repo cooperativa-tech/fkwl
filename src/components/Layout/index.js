@@ -1,15 +1,14 @@
-import React from "react";
-import PropTypes from "prop-types";
-import SEO from "root/components/SEO";
-import Header from "root/components/Header";
+import React from 'react';
+import PropTypes from 'prop-types';
+import SEO from 'root/components/SEO';
+import Header from 'root/components/Header';
 
-import "./index.css";
+import './index.css';
 
 function Layout({ children }) {
   return (
     <div styleName="root">
       <SEO title="From Kibera with love" />
-      <Header />
       {children}
     </div>
   );
