@@ -1,8 +1,15 @@
 {
-  "plugins": ["jsx-a11y"],
+  "plugins": ["jsx-a11y", "react-hooks"],
   "parser": "babel-eslint",
-  "extends": ["airbnb", "prettier", "plugin:jsx-a11y/recommended"],
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/react",
+    "plugin:jsx-a11y/recommended"
+  ],
   "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
     "class-methods-use-this": 0,
     "consistent-return": 0,
     "react/no-multi-comp": [2, { "ignoreStateless": true }],
@@ -14,7 +21,7 @@
     "import/no-extraneous-dependencies": 0,
     "no-underscore-dangle": 0,
     "react/destructuring-assignment": ["never"],
-    "react/jsx-one-expression-per-line": [{ "none"}]
+    "react/jsx-one-expression-per-line": [{ "allow": "none" }]
   },
   "env": {
     "browser": true,
