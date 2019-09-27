@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Image from 'root/components/Image';
+import Logo from 'root/components/Logo';
 
 /* eslint-disable */
 import logoFacebook from '!file-loader!../../assets/logoFacebook.svg';
@@ -12,12 +12,12 @@ const SocialDetails = () => {
     <>
       <div styleName="textBlock">
         <div styleName="bold">
-          <Image src={logoFacebook} alt="From Kibera With Love Logo" />
+          <Logo src={logoFacebook} alt="From Kibera With Love Logo" />
           <a href="https://www.instagram.com/fromkiberawithlove/">Facebook</a>
         </div>
         <div styleName="textBlock">
           <div styleName="bold">
-            <Image src={logoInstagram} alt="From Kibera With Love Logo" />
+            <Logo src={logoInstagram} alt="From Kibera With Love Logo" />
             <a href="https://www.facebook.com/FromKiberaWithLove">Instagram</a>
           </div>
         </div>

@@ -3,7 +3,7 @@ import React from 'react';
 import BankDetails from 'root/components/BankDetails';
 import SocialDetails from 'root/components/SocialDetails';
 import Text from 'root/components/Text';
-import Image from 'root/components/Image';
+import Logo from 'root/components/Logo';
 import Layout from 'root/components/Layout';
 
 /* eslint-disable */
@@ -54,9 +54,9 @@ const IndexPage = () => (
     </Text>
     <div styleName="imageSection ">
       <div styleName="logo">
-        <Image src={logo} alt="From Kibera With Love Logo" />
+        <Logo src={logo} alt="From Kibera With Love Logo" />
       </div>
-      <Image src={fkwlGif} alt="Happy kid fkwl" />
+      <Logo src={fkwlGif} alt="Happy kid fkwl" />
     </div>
   </Layout>
 );

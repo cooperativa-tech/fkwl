@@ -35,3 +35,7 @@
 .gif {
   width: 10px !important;
 }
+
+.kid {
+  width: calc(7 * var(--cell-length) + 6 * var(--gutter));
+}
