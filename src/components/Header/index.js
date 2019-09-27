@@ -21,7 +21,7 @@ const Header = () => {
         <Link styleName="linkEn" to="/en">
           En
         </Link>
-        <Link to="/">Contacte-nos</Link>
+        <Link to="/">Contacta-nos</Link>
       </div>
     </div>
   );
