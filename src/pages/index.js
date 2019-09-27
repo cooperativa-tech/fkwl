@@ -19,7 +19,7 @@ const IndexPage = () => (
       <div styleName="textBlock">Olá,</div>
       <div styleName="textBlock">
         O
-        <span styleName="bold">From Kibera With Love </span>
+        <span styleName="bold"> From Kibera With Love </span>
         é um projeto
         criado pela portuguesa Marta Baeta em Janeiro de 2013 que tem como
         objetivo dar oportunidades de crescimento a crianças de Kibera, uma das
