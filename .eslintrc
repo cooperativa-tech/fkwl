@@ -20,8 +20,15 @@
     "react/require-default-props": 0,
     "import/no-extraneous-dependencies": 0,
     "no-underscore-dangle": 0,
-    "react/destructuring-assignment": ["never"],
-    "react/jsx-one-expression-per-line": [{ "allow": "none" }]
+    "react/destructuring-assignment": 1,
+    "react/jsx-one-expression-per-line": 1,
+    "react/jsx-filename-extension": 0,
+    "import/no-unresolved": [
+      2,
+      {
+        "ignore": ["root/"]
+      }
+    ]
   },
   "env": {
     "browser": true,

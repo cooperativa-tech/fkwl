@@ -28,7 +28,7 @@ const BankDetails = ({ nib, iban, swift }) => {
 
 BankDetails.propTypes = {
   nib: PropTypes.string.isRequired,
-  nif: PropTypes.string.isRequired,
+  iban: PropTypes.string.isRequired,
   swift: PropTypes.string.isRequired
 };
 
