@@ -18,7 +18,8 @@ const IndexPage = () => (
     <Text>
       <div styleName="textBlock">Hi,</div>
       <div styleName="textBlock">
-        <span styleName="bold">From Kibera With Love</span>is a project created
+        <span styleName="bold">From Kibera With Love</span>
+        is a project created
         by Marta Baeta in January 2013 with the goal of providing growth
         opportunities for the children of Kibera, on of the world’s biggest
         slums.
