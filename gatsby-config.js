@@ -7,7 +7,7 @@ module.exports = {
     author: 'Cooperativa.tech',
     description:
       'A gatsby starter with ESLint, Prettier, Stylelint, Postcss modules and analytics',
-    keywords: 'gatsby, starter, eslint, postcss, analytics'
+    keywords: 'gatsby, starter, eslint, postcss, analytics',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -16,8 +16,8 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'assets',
-        path: `${__dirname}/src/assets/`
-      }
+        path: `${__dirname}/src/assets/`,
+      },
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
@@ -26,22 +26,15 @@ module.exports = {
       options: {
         trackingId: 'trackingIDhere',
         head: true,
-        anonymize: true
-      }
-    },
-    {
-      resolve: 'gatsby-plugin-i18n',
-      options: {
-        langKeyDefault: 'en',
-        useLangKeyLayout: false
-      }
+        anonymize: true,
+      },
     },
     {
       resolve: 'gatsby-plugin-root-import',
       options: {
-        root: path.join(__dirname, 'src')
-      }
+        root: path.join(__dirname, 'src'),
+      },
     },
-    'gatsby-plugin-sitemap'
-  ]
+    'gatsby-plugin-sitemap',
+  ],
 };

@@ -54,7 +54,14 @@ const IndexPage = () => {
       <Text>
         <div styleName="textBlock">
           Para falar connosco, envia-nos um email para:
-          <p styleName="bold text ">hello@fromkiberawithlove.com</p>
+          <p styleName="bold text ">
+            <a
+              styleName="emailAddress"
+              href="mailto:hello@fromkiberawithlove.com"
+            >
+              hello@fromkiberawithlove.com
+            </a>
+          </p>
         </div>
       </Text>
       <BankDetails

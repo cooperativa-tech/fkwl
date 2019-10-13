@@ -8,7 +8,11 @@
 .bold {
   font-weight: var(--font-weight-bold);
 }
+.emailAddress {
+  color: var(--color-red);
 
+  text-decoration: none;
+}
 .section {
   margin-bottom: var(--size-32);
 }

@@ -22,7 +22,7 @@ const Header = () => {
           En
         </Link>
         <Link styleName="hide" to="/">
-          Contacta-nos
+          <a href="mailto:hello@fromkiberawithlove.com">Contacta-nos</a>
         </Link>
       </div>
     </div>
