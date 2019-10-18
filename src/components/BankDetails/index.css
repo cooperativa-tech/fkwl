@@ -32,4 +32,6 @@
 
 .bankDetail {
   margin: var(--size-8) 0;
+
+  font-weight: var(--font-weight-bold);
 }
