@@ -1,7 +1,7 @@
 @import '../../styles/variables.css';
 
 .textBlock {
-  margin: var(--size-20);
+  margin: var(--size-20) 0;
 
   @media (--desktop-breakpoint) {
     margin: var(--size-32);

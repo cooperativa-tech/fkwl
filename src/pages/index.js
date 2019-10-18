@@ -64,6 +64,7 @@ const IndexPage = () => {
           </p>
         </div>
       </Text>
+      <Text>Para donativos, aqui tens a informação que precisas:</Text>
       <BankDetails
         nib="0065 0924 00195900000 75"
         iban="PT 065 0924 00195900000 75"

@@ -3,6 +3,8 @@
 .textBlock {
   margin-bottom: var(--size-32);
 
+  color: var(--color-blue);
+
   font-size: var(--size-20);
   line-height: var(--size-24);
 
@@ -13,6 +15,8 @@
 }
 
 .bold {
+  color: var(--color-grey);
+
   font-weight: var(--font-weight-bold);
 }
 
@@ -24,4 +28,8 @@
   margin-bottom: var(--size-32);
 
   font-weight: var(--font-weight-bold);
+}
+
+.bankDetail {
+  margin: var(--size-8) 0;
 }

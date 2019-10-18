@@ -9,7 +9,7 @@
   font-weight: var(--font-weight-bold);
 }
 .emailAddress {
-  color: var(--color-red);
+  color: var(--color-yellow);
 
   text-decoration: none;
 }

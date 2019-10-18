@@ -8,17 +8,16 @@ const BankDetails = ({ nib, iban, swift }) => {
   return (
     <Text>
       <div styleName="textBlock">
-        For donations, here’s the info you’ll need:
-        <div styleName="">
-          <span styleName="bold"> NIB:</span>
+        <div styleName="bankDetail">
+          <span styleName="bold"> NIB: </span>
           {nib}
         </div>
-        <div>
-          <span styleName="bold"> IBAN:</span>
+        <div styleName="bankDetail">
+          <span styleName="bold"> IBAN: </span>
           {iban}
         </div>
-        <div>
-          <span styleName="bold"> SWIFT/BIC:</span>
+        <div styleName="bankDetail">
+          <span styleName="bold"> SWIFT/BIC: </span>
           {swift}
         </div>
       </div>
