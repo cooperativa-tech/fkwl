@@ -30,6 +30,13 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-i18n',
+      options: {
+        langKeyDefault: 'en',
+        useLangKeyLayout: false,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-root-import',
       options: {
         root: path.join(__dirname, 'src'),
