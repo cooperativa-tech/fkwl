@@ -16,7 +16,7 @@ const Gallery = () => {
             absolutePath
             id
             childImageSharp {
-              fluid(maxWidth: 1200, quality: 95) {
+              fluid(maxWidth: 500, quality: 95) {
                 ...GatsbyImageSharpFluid_withWebp
               }
             }
@@ -25,11 +25,10 @@ const Gallery = () => {
       }
     }
   `);
-  const selection = _.slice(images, 0, 5);
 
   return (
     <div styleName="root">
-      {_.map(selection, image => {
+      {_.map(images, image => {
         return (
           <div styleName="frame">
             <Image
