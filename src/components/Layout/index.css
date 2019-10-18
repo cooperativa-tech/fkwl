@@ -1,6 +1,8 @@
 @import '../../styles/variables.css';
 
 .root {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,7 +10,7 @@
 
   box-sizing: content-box;
 
-  max-width: var(--grid-size);
   padding: 0 var(--size-20);
   margin: 0 auto;
+  overflow-x: hidden;
 }

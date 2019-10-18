@@ -1,0 +1,77 @@
+@import '../../styles/variables.css';
+
+.root {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  margin: var(--size-32) 0 var(--size-44);
+  overflow: visible;
+}
+
+.frame {
+  padding: var(--size-8);
+
+  background-color: white;
+
+  @media (min-width: 700px) {
+    padding: var(--size-20);
+  }
+
+  &:nth-child(n + 3) {
+    z-index: 1;
+
+    transform: rotate(5deg);
+  }
+  &:nth-child(2n + 3) {
+    z-index: 2;
+
+    transform: rotate(-10deg);
+  }
+  &:nth-child(3) {
+    z-index: 3;
+
+    transform: rotate(1deg);
+  }
+
+  &:nth-child(1) {
+    position: absolute;
+    left: -140%;
+    z-index: 1;
+
+    transform: rotate(5deg);
+  }
+  &:nth-child(2) {
+    position: absolute;
+    left: -70%;
+    z-index: 2;
+
+    transform: rotate(-10deg);
+  }
+  &:nth-child(3) {
+    z-index: 3;
+
+    transform: rotate(1deg);
+  }
+  &:nth-child(4) {
+    position: absolute;
+    left: 70%;
+    z-index: 2;
+
+    transform: rotate(5deg);
+  }
+  &:nth-child(5) {
+    position: absolute;
+    left: 150%;
+    z-index: 1;
+
+    transform: rotate(-10deg);
+  }
+}
+
+.image {
+  width: calc(2 * var(--cell-length) + 1 * var(--gutter));
+  @media (min-width: 700px) {
+    width: calc(4 * var(--cell-length) + 6 * var(--gutter));
+  }
+}

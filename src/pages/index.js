@@ -1,14 +1,12 @@
 import React from 'react';
 
-import { graphql, useStaticQuery } from 'gatsby';
-import Image from 'gatsby-image/withIEPolyfill';
-
 import BankDetails from 'root/components/BankDetails';
 import SocialDetails from 'root/components/SocialDetails';
 import Text from 'root/components/Text';
 import Logo from 'root/components/Logo';
 import Header from 'root/components/Header';
 import Layout from 'root/components/Layout';
+import Gallery from 'root/components/Gallery';
 
 /* eslint-disable */
 import fkwlGif from '../assets/fkwlGif.gif';
@@ -18,28 +16,19 @@ import logo from '!file-loader!../assets/logoFkwl.svg';
 import './index.css';
 
 const IndexPage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      file(relativePath: { eq: "photoKidFkwl.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200, quality: 95) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `);
-
   return (
     <Layout>
       <Header />
       <Text>
         <div styleName="textBlock">Olá,</div>
         <div styleName="textBlock">
-          O <span styleName="bold"> From Kibera With Love </span>é um projeto
-          criado pela portuguesa Marta Baeta em Janeiro de 2013 que tem como
-          objetivo dar oportunidades de crescimento a crianças de Kibera, uma
-          das maiores favelas do mundo.
+          <span>O</span>
+          <span styleName="bold"> From Kibera With Love </span>
+          <span>
+            é um projeto criado pela portuguesa Marta Baeta em Janeiro de 2013
+            que tem como objetivo dar oportunidades de crescimento a crianças de
+            Kibera, uma das maiores favelas do mundo.
+          </span>
         </div>
         <div styleName="textBlock">
           No Quénia ter-se acesso à educação é um luxo e a maioria das crianças
@@ -51,6 +40,7 @@ const IndexPage = () => {
           amigos, conseguimos garantir educação a mais de 100 crianças.
         </div>
       </Text>
+      <Gallery />
       <Text>
         <div styleName="textBlock">
           Para falar connosco, envia-nos um email para:
@@ -82,11 +72,7 @@ const IndexPage = () => {
         <div styleName="logo">
           <Logo src={logo} alt="From Kibera With Love Logo" />
         </div>
-        <Image
-          styleName="kid"
-          fluid={data.file.childImageSharp.fluid}
-          alt="Happy kid fkwl"
-        />
+        <Logo src={fkwlGif} alt="Happy kid fkwl" />
       </div>
     </Layout>
   );

@@ -1,14 +1,12 @@
 import React from 'react';
 
-import { graphql, useStaticQuery } from 'gatsby';
-import Image from 'gatsby-image/withIEPolyfill';
-
 import BankDetails from 'root/components/BankDetails';
 import SocialDetails from 'root/components/SocialDetails';
 import Text from 'root/components/Text';
 import Logo from 'root/components/Logo';
 import Header from 'root/components/Header';
 import Layout from 'root/components/Layout';
+import Gallery from 'root/components/Gallery';
 
 /* eslint-disable */
 import fkwlGif from '../assets/fkwlGif.gif';
@@ -18,28 +16,19 @@ import logo from '!file-loader!../assets/logoFkwl.svg';
 import './index.css';
 
 const IndexPage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      file(relativePath: { eq: "photoKidFkwl.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200, quality: 95) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `);
-
   return (
     <Layout>
       <Header />
       <Text>
         <div styleName="textBlock">Olá,</div>
         <div styleName="textBlock">
-          O <span styleName="bold"> From Kibera With Love </span> is a project
-          created by Marta Baeta in January 2013 with the goal of providing
-          growth opportunities for the children of Kibera, one of the world’s
-          biggest slums.
+          <span>O</span>
+          <span styleName="bold"> From Kibera With Love </span>
+          <span>
+            is a project created by Marta Baeta in January 2013 with the goal of
+            providing growth opportunities for the children of Kibera, one of
+            the world’s biggest slums.
+          </span>
         </div>
         <div styleName="textBlock">
           In Kenya, having access to education is a luxury that most children
@@ -52,6 +41,7 @@ const IndexPage = () => {
           children.
         </div>
       </Text>
+      <Gallery />
       <Text>
         <div styleName="textBlock">
           To get in touch, email us at:
@@ -83,11 +73,7 @@ const IndexPage = () => {
         <div styleName="logo">
           <Logo src={logo} alt="From Kibera With Love Logo" />
         </div>
-        <Image
-          styleName="kid"
-          fluid={data.file.childImageSharp.fluid}
-          alt="Happy kid fkwl"
-        />
+        <Logo src={fkwlGif} alt="Happy kid fkwl" />
       </div>
     </Layout>
   );
