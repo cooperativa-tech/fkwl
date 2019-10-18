@@ -18,7 +18,7 @@ import './index.css';
 const IndexPage = () => {
   return (
     <Layout>
-      <Header />
+      <Header contact="Contact us" />
       <Text>
         <div styleName="textBlock">Olá,</div>
         <div styleName="textBlock">

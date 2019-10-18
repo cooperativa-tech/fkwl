@@ -41,14 +41,23 @@
 .separator {
   margin-right: var(--size-8);
   margin-left: var(--size-8);
+
+  font-size: var(--size-24);
+  line-height: var(--size-32);
 }
 
 .linkPt {
   margin-right: var(--size-8);
+
+  font-size: var(--size-24);
+  line-height: var(--size-32);
 }
 
 .linkEn {
   margin-left: var(--size-8);
+
+  font-size: var(--size-24);
+  line-height: var(--size-32);
 
   @media (min-width: 700px) {
     margin-right: var(--size-56);
@@ -59,6 +68,9 @@
 
 .hide {
   display: none;
+
+  font-size: var(--size-24);
+  line-height: var(--size-32);
 
   @media (min-width: 700px) {
     display: block;
