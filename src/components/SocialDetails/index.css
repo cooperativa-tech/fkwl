@@ -1,6 +1,8 @@
 @import '../../styles/variables.css';
 
 .textBlock {
+  position: relative;
+
   margin: var(--size-20) 0;
 
   @media (--desktop-breakpoint) {
@@ -14,6 +16,10 @@
   color: var(--color-red);
 
   text-decoration: none;
+
+  @media (min-width: 700px) {
+    margin-left: 0;
+  }
 }
 
 .bold {
@@ -36,5 +42,16 @@
 }
 
 .logo {
+  position: relative;
+
   margin-right: 20px;
+
+  @media (min-width: 700px) {
+    position: absolute;
+    top: 4px;
+    left: -50px;
+    z-index: 5;
+
+    overflow: visible;
+  }
 }

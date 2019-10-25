@@ -4,7 +4,6 @@
   width: 100%;
   max-width: calc(4 * var(--cell-length) + 3 * var(--gutter));
   margin: 0 auto;
-  overflow: hidden;
 
   color: var(--color-grey);
 
