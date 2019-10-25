@@ -9,8 +9,8 @@ import Header from 'root/components/Header';
 import Gallery from 'root/components/Gallery';
 import SEO from 'root/components/SEO';
 
+import kids from '../assets/kids.mp4';
 /* eslint-disable */
-import fkwlGif from '../assets/fkwlGif.gif';
 import logo from '!file-loader!../assets/logoFkwl.svg';
 /* eslint-enable */
 
@@ -75,7 +75,9 @@ const IndexPage = () => {
         <div styleName="logo">
           <Logo src={logo} alt="From Kibera With Love Logo" />
         </div>
-        <Logo src={fkwlGif} alt="Happy kid fkwl" />
+        <video muted autoPlay loop styleName="video">
+          <source src={kids} type="video/mp4" />
+        </video>
       </div>
     </>
   );
