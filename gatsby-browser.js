@@ -3,7 +3,6 @@ import Layout from './src/components/Layout';
 
 require('./src/styles/reset.css');
 
-// eslint-disable-next-line import/prefer-default-export
 export const onClientEntry = async () => {
   if (typeof IntersectionObserver === 'undefined') {
     await import('intersection-observer');
