@@ -10,7 +10,7 @@ import './index.css';
 const messages = { en, pt };
 
 function Layout({ children, pageContext }) {
-  if (!pageContext && !pageContext.locale) {
+  if (!pageContext || !pageContext.locale) {
     return <div styleName="root">{children}</div>;
   }
 
