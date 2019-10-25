@@ -1,6 +1,7 @@
 module.exports = {
   hello: 'Olá',
   keywords: 'fkwl, from, kibera, with, love, quenia, volunteering, kids',
+  contactUs: 'Contact-nos',
   home1: `
     O From Kibera With Love é um projeto criado pela portuguesa
     Marta Baeta em Janeiro de 2013 que tem como objetivo dar

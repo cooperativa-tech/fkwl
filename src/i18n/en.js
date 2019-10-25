@@ -1,6 +1,7 @@
 module.exports = {
   hello: 'Hello',
   keywords: 'fkwl, from, kibera, with, love, kenya, volunteering, kids',
+  contactUs: 'Contact Us',
   home1: `
     From Kibera With Love is a project created by Marta Baeta in January
     2013 with the goal of providing growth opportunities for the children
