@@ -26,12 +26,13 @@
 
   display: flex;
   justify-content: center;
-  max-width: calc(3 * var(--cell-length) + 4 * var(--gutter));
+
+  width: calc(4 * var(--cell-length) + 4 * var(--gutter));
   margin-top: var(--size-32);
   margin-bottom: var(--size-32);
 
   @media (min-width: 700px) {
-    max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
+    width: calc(7 * var(--cell-length) + 6 * var(--gutter));
     margin-top: var(--size-100);
   }
 }
@@ -57,4 +58,9 @@
   @media (min-width: 700px) {
     width: calc(7 * var(--cell-length) + 6 * var(--gutter));
   }
+}
+
+.video {
+  width: 728px;
+  height: auto;
 }
