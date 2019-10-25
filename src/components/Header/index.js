@@ -25,9 +25,9 @@ const Header = ({ contact }) => {
         <Link styleName={`${locale === 'en' ? 'linkEn' : 'linkEn fade'}`} to="/en">
           En
         </Link>
-        <Link styleName="hide" to="/">
+        <div styleName="hide">
           <a href="mailto:hello@fromkiberawithlove.com">{contact}</a>
-        </Link>
+        </div>
       </div>
     </div>
   );

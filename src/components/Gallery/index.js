@@ -1,6 +1,5 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import _ from 'lodash';
 import Image from 'gatsby-image/withIEPolyfill';
 
 import './index.css';
@@ -28,9 +27,9 @@ const Gallery = () => {
 
   return (
     <div styleName="root">
-      {_.map(images, image => {
+      {images.map(image => {
         return (
-          <div styleName="frame">
+          <div styleName="frame" key={image.node.id}>
             <Image
               styleName="image"
               fluid={image.node.childImageSharp.fluid}
