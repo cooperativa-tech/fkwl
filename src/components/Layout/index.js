@@ -24,16 +24,7 @@ function Layout({ children, pageContext }) {
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-  data: PropTypes.shape({
-    site: PropTypes.shape({
-      siteMetadata: PropTypes.shape({
-        title: PropTypes.string.isRequired,
-        description: PropTypes.string.isRequired,
-        keywords: PropTypes.string.isRequired
-      }).isRequired
-    }).isRequired
-  }).isRequired
+  children: PropTypes.node.isRequired
 };
 
 export default Layout;

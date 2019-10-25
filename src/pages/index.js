@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, useIntl } from 'react-intl';
 
 import BankDetails from 'root/components/BankDetails';
 import SocialDetails from 'root/components/SocialDetails';
@@ -17,13 +17,14 @@ import logo from '!file-loader!../assets/logoFkwl.svg';
 import './index.css';
 
 const IndexPage = () => {
+  const { formatMessage } = useIntl();
+
   return (
     <>
       <SEO
         title="From Kibera with love"
-        description="From Kibera With Love é um projeto criado pela portuguesa Marta Baeta em Janeiro de 2013
-            que tem como objetivo dar oportunidades de crescimento a crianças de
-            Kibera, uma das maiores favelas do mundo."
+        description={formatMessage({ id: 'home1' })}
+        keywords={formatMessage({ id: 'keywords' })}
       />
 
       <Header contact="Contacta-nos" />
