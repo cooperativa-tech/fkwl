@@ -9,8 +9,16 @@
   overflow: visible;
 }
 
+.image {
+  width: calc(2 * var(--cell-length) + 1 * var(--gutter));
+  @media (min-width: 700px) {
+    width: calc(4 * var(--cell-length) + 6 * var(--gutter));
+  }
+}
+
 .frame {
   padding: var(--size-8);
+  overflow: visible;
 
   background-color: white;
 
@@ -67,11 +75,20 @@
 
     transform: rotate(-10deg);
   }
-}
 
-.image {
-  width: calc(2 * var(--cell-length) + 1 * var(--gutter));
-  @media (min-width: 700px) {
-    width: calc(4 * var(--cell-length) + 6 * var(--gutter));
+  &::after {
+    content: 'potato';
+
+    position: absolute;
+    bottom: calc(-1 * var(--size-20));
+
+    width: calc(2 * var(--cell-length) + 1 * var(--gutter));
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.1);
+    filter: blur(44px);
+    @media (min-width: 700px) {
+      width: calc(4 * var(--cell-length) + 6 * var(--gutter));
+    }
   }
 }
