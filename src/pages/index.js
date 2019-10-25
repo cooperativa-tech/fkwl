@@ -29,8 +29,7 @@ const IndexPage = () => {
       <Header contact="Contacta-nos" />
       <Text>
         <div styleName="textBlock">
-          <FormattedMessage id="hello" />
-          {','}
+          <FormattedMessage id="hello" />,
         </div>
         <div styleName="textBlock">
           <FormattedMessage id="home1" />
