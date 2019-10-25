@@ -9,7 +9,13 @@ import './index.css';
 
 const messages = { en, pt };
 
-function Layout({ children, pageContext: { locale } }) {
+function Layout({ children, pageContext }) {
+  if (!pageContext && !pageContext.locale) {
+    return <div styleName="root">{children}</div>;
+  }
+
+  const { locale } = pageContext;
+
   return (
     <IntlProvider locale={locale} messages={messages[locale]}>
       <div styleName="root">{children}</div>
