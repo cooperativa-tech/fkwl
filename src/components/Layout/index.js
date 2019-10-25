@@ -1,16 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import SEO from 'root/components/SEO';
-import Header from 'root/components/Header';
+import { IntlProvider } from 'react-intl';
+
+import en from 'root/i18n/en';
+import pt from 'root/i18n/pt';
 
 import './index.css';
 
-function Layout({ children }) {
+const messages = { en, pt };
+
+function Layout({ children, pageContext }) {
+  const locale = pageContext && pageContext.locale;
+
+  if (!locale) {
+    return <div styleName="root">{children}</div>;
+  }
+
   return (
-    <div styleName="root">
-      <SEO title="From Kibera with love" />
-      {children}
-    </div>
+    <IntlProvider locale={locale} messages={messages[locale]}>
+      <div styleName="root">{children}</div>
+    </IntlProvider>
   );
 }
 

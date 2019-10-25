@@ -1,12 +1,13 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
 import BankDetails from 'root/components/BankDetails';
 import SocialDetails from 'root/components/SocialDetails';
 import Text from 'root/components/Text';
 import Logo from 'root/components/Logo';
 import Header from 'root/components/Header';
-import Layout from 'root/components/Layout';
 import Gallery from 'root/components/Gallery';
+import SEO from 'root/components/SEO';
 
 /* eslint-disable */
 import fkwlGif from '../assets/fkwlGif.gif';
@@ -17,33 +18,33 @@ import './index.css';
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <>
+      <SEO
+        title="From Kibera with love"
+        description="From Kibera With Love é um projeto criado pela portuguesa Marta Baeta em Janeiro de 2013
+            que tem como objetivo dar oportunidades de crescimento a crianças de
+            Kibera, uma das maiores favelas do mundo."
+      />
+
       <Header contact="Contacta-nos" />
       <Text>
-        <div styleName="textBlock">Olá,</div>
         <div styleName="textBlock">
-          <span>O</span>
-          <span styleName="bold"> From Kibera With Love </span>
-          <span>
-            é um projeto criado pela portuguesa Marta Baeta em Janeiro de 2013
-            que tem como objetivo dar oportunidades de crescimento a crianças de
-            Kibera, uma das maiores favelas do mundo.
-          </span>
+          <FormattedMessage id="hello" />,
         </div>
         <div styleName="textBlock">
-          No Quénia ter-se acesso à educação é um luxo e a maioria das crianças
-          de Kibera não tem essa sorte, simplesmente porque muitas delas não têm
-          uma família que consiga assegurar o seu futuro.
+          <FormattedMessage id="home1" />
         </div>
         <div styleName="textBlock">
-          Graças a amigos, conhecidos e estranhos que rapidamente se tornam
-          amigos, conseguimos garantir educação a mais de 100 crianças.
+          <FormattedMessage id="home2" />
+        </div>
+        <div styleName="textBlock">
+          <FormattedMessage id="home3" />
         </div>
       </Text>
       <Gallery />
       <Text>
         <div styleName="textBlock">
-          Para falar connosco, envia-nos um email para:
+          <FormattedMessage id="speakWithUs" />
           <p styleName="bold text ">
             <a
               styleName="emailAddress"
@@ -54,7 +55,9 @@ const IndexPage = () => {
           </p>
         </div>
       </Text>
-      <Text>Para donativos, aqui tens a informação que precisas:</Text>
+      <Text>
+        <FormattedMessage id="donatives" />
+      </Text>
       <BankDetails
         nib="0065 0924 00195900000 75"
         iban="PT 065 0924 00195900000 75"
@@ -62,7 +65,7 @@ const IndexPage = () => {
       />
       <Text>
         <div styleName="textBlock">
-          E aqui podes encontrar mais informação sobre nós:
+          <FormattedMessage id="moreInfo" />
         </div>
         <SocialDetails />
         Asante Sana(Muito obrigado),
@@ -74,7 +77,7 @@ const IndexPage = () => {
         </div>
         <Logo src={fkwlGif} alt="Happy kid fkwl" />
       </div>
-    </Layout>
+    </>
   );
 };
 

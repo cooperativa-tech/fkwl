@@ -22,6 +22,7 @@
 .navbarLinks {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
 
   font-weight: var(--font-weight-bold);
@@ -64,6 +65,10 @@
 
     font-size: var(--size-24);
   }
+}
+
+.fade {
+  opacity: 0.5;
 }
 
 .hide {
