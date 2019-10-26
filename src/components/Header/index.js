@@ -18,15 +18,21 @@ const Header = ({ contact }) => {
     <div styleName="header">
       <Logo src={logoNavbar} alt="From Kibera With Love Logo" />
       <div styleName="navbarLinks">
-        <Link styleName={`${locale === 'pt' ? 'linkPt' : 'linkPt fade'}`} to="/">
+        <Link
+          styleName={`${locale === 'pt' ? 'linkPt' : 'linkPt fade'}`}
+          to="/"
+        >
           Pt
         </Link>
         <span styleName="separator">/</span>
-        <Link styleName={`${locale === 'en' ? 'linkEn' : 'linkEn fade'}`} to="/en">
+        <Link
+          styleName={`${locale === 'en' ? 'linkEn' : 'linkEn fade'}`}
+          to="/en"
+        >
           En
         </Link>
         <div styleName="hide">
-          <a href="mailto:hello@fromkiberawithlove.com">{contact}</a>
+          <a href="mailto:fromkiberawithlove@gmail.com">{contact}</a>
         </div>
       </div>
     </div>
@@ -34,7 +40,7 @@ const Header = ({ contact }) => {
 };
 
 Header.propTypes = {
-  contact: PropTypes.string.isRequired
+  contact: PropTypes.string.isRequired,
 };
 
 export default Header;

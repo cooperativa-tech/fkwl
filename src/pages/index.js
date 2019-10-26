@@ -49,7 +49,7 @@ const IndexPage = () => {
           <p styleName="bold text ">
             <a
               styleName="emailAddress"
-              href="mailto:hello@fromkiberawithlove.com"
+              href="mailto:fromkiberawithlove@gmail.com"
             >
               hello@fromkiberawithlove.com
             </a>
@@ -60,8 +60,8 @@ const IndexPage = () => {
         <FormattedMessage id="donatives" />
       </Text>
       <BankDetails
-        nib="0065 0924 00195900000 75"
-        iban="PT 065 0924 00195900000 75"
+        nib=" 0065 0921 00292680007 14"
+        iban="PT50 006509210029268000714"
         swift="BESZ PT PL"
       />
       <Text>
