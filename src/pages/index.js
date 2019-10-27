@@ -60,7 +60,7 @@ const IndexPage = () => {
         <FormattedMessage id="donatives" />
       </Text>
       <BankDetails
-        nib=" 0065 0921 00292680007 14"
+        nib="0065 0921 00292680007 14"
         iban="PT50 006509210029268000714"
         swift="BESZ PT PL"
       />
