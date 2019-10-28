@@ -40,8 +40,4 @@ const Header = () => {
   );
 };
 
-Header.propTypes = {
-  contact: PropTypes.string.isRequired
-};
-
 export default Header;
