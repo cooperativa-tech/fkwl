@@ -1,7 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
-import { useIntl } from 'react-intl';
+import { useIntl, FormattedMessage } from 'react-intl';
 
 import Logo from '../Logo';
 
@@ -11,7 +10,7 @@ import logoNavbar from '!file-loader!../../assets/logoNavbar.svg';
 
 import './index.css';
 
-const Header = ({ contact }) => {
+const Header = () => {
   const { locale } = useIntl();
 
   return (
@@ -32,15 +31,13 @@ const Header = ({ contact }) => {
           En
         </Link>
         <div styleName="hide">
-          <a href="mailto:fromkiberawithlove@gmail.com">{contact}</a>
+          <a href="mailto:fromkiberawithlove@gmail.com">
+            <FormattedMessage id="contactUs" />
+          </a>
         </div>
       </div>
     </div>
   );
-};
-
-Header.propTypes = {
-  contact: PropTypes.string.isRequired,
 };
 
 export default Header;

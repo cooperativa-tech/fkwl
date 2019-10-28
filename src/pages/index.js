@@ -22,12 +22,13 @@ const IndexPage = () => {
   return (
     <>
       <SEO
-        title="From Kibera with love"
+        title="From Kibera With Love"
         description={formatMessage({ id: 'home1' })}
         keywords={formatMessage({ id: 'keywords' })}
       />
 
-      <Header contact="Contacta-nos" />
+      <Header />
+
       <Text>
         <div styleName="textBlock">
           <FormattedMessage id="hello" />,
