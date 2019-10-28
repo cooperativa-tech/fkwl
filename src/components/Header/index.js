@@ -31,13 +31,15 @@ const Header = () => {
           En
         </Link>
         <div styleName="hide">
-          <a href="mailto:hello@fromkiberawithlove.com">
-            <FormattedMessage id="contactUs" />
-          </a>
+          <a href="mailto:fromkiberawithlove@gmail.com">{contact}</a>
         </div>
       </div>
     </div>
   );
+};
+
+Header.propTypes = {
+  contact: PropTypes.string.isRequired,
 };
 
 export default Header;
