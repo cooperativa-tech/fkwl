@@ -52,7 +52,7 @@ const IndexPage = () => {
               styleName="emailAddress"
               href="mailto:fromkiberawithlove@gmail.com"
             >
-              hello@fromkiberawithlove.com
+              fromkiberawithlove@gmail.com
             </a>
           </p>
         </div>
