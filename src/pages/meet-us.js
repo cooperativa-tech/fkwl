@@ -6,6 +6,7 @@ import SocialDetails from 'root/components/SocialDetails';
 import Text from 'root/components/Text';
 import Logo from 'root/components/Logo';
 import Header from 'root/components/Header';
+import { MeetUs } from 'root/components/Gallery';
 
 import SEO from 'root/components/SEO';
 
@@ -42,6 +43,7 @@ const IndexPage = () => {
           <FormattedMessage id="meetUs2" />
         </div>
       </Text>
+      <MeetUs />
     </>
   );
 };

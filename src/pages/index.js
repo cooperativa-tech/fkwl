@@ -6,7 +6,7 @@ import SocialDetails from 'root/components/SocialDetails';
 import Text from 'root/components/Text';
 import Logo from 'root/components/Logo';
 import Header from 'root/components/Header';
-import Gallery from 'root/components/Gallery';
+import { Home } from 'root/components/Gallery';
 import SEO from 'root/components/SEO';
 
 import kids from '../assets/kids.mp4';
@@ -43,7 +43,7 @@ const IndexPage = () => {
           <FormattedMessage id="home3" />
         </div>
       </Text>
-      <Gallery />
+      <Home />
       <Text>
         <div styleName="textBlock">
           <FormattedMessage id="speakWithUs" />

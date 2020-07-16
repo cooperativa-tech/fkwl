@@ -6,6 +6,7 @@ import SocialDetails from 'root/components/SocialDetails';
 import Text from 'root/components/Text';
 import Logo from 'root/components/Logo';
 import Header from 'root/components/Header';
+import { Education, Activities, Clothing, Family, Food, Health, Microcredit } from 'root/components/Gallery';
 
 import SEO from 'root/components/SEO';
 
@@ -54,6 +55,7 @@ const IndexPage = () => {
           <FormattedMessage id="education1" />
         </div>
       </Text>
+      <Education />
 
       <Text>
         <div styleName="textBlock">
@@ -65,6 +67,7 @@ const IndexPage = () => {
           <FormattedMessage id="activities1" />
         </div>
       </Text>
+      <Activities />
 
       <Text>
         <div styleName="textBlock">
@@ -76,6 +79,7 @@ const IndexPage = () => {
           <FormattedMessage id="food1" />
         </div>
       </Text>
+      <Food />
 
       <Text>
         <div styleName="textBlock">
@@ -87,6 +91,7 @@ const IndexPage = () => {
           <FormattedMessage id="health1" />
         </div>
       </Text>
+      <Health />
 
       <Text>
         <div styleName="textBlock">
@@ -98,6 +103,7 @@ const IndexPage = () => {
           <FormattedMessage id="clothing1" />
         </div>
       </Text>
+      <Clothing />
 
       <Text>
         <div styleName="textBlock">
@@ -109,6 +115,7 @@ const IndexPage = () => {
           <FormattedMessage id="familySupport1" />
         </div>
       </Text>
+      <Family />
 
       <Text>
         <div styleName="textBlock">
@@ -123,6 +130,7 @@ const IndexPage = () => {
           <FormattedMessage id="microcredit2" />
         </div>
       </Text>
+      <Microcredit />
     </>
   );
 };

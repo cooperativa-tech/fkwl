@@ -6,6 +6,7 @@ import SocialDetails from 'root/components/SocialDetails';
 import Text from 'root/components/Text';
 import Logo from 'root/components/Logo';
 import Header from 'root/components/Header';
+import { Help } from 'root/components/Gallery';
 
 import SEO from 'root/components/SEO';
 
@@ -106,6 +107,7 @@ const IndexPage = () => {
           <FormattedMessage id="questions" />
         </div>
       </Text>
+      <Help />
     </>
   );
 };
