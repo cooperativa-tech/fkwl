@@ -15,7 +15,11 @@ const Header = () => {
 
   return (
     <div styleName="header">
-      <Logo src={logoNavbar} alt="From Kibera With Love Logo" />
+      <Link
+        to={`${locale === 'pt' ? '/' : '/en'}`}
+      >
+        <Logo src={logoNavbar} alt="From Kibera With Love Logo" />
+      </Link>
       <div styleName="navbarLinks">
         <Link
           styleName={`${locale === 'pt' ? 'linkPt' : 'linkPt fade'}`}
