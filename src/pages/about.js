@@ -1,18 +1,10 @@
 import React from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 
-import BankDetails from 'root/components/BankDetails';
-import SocialDetails from 'root/components/SocialDetails';
 import Text from 'root/components/Text';
-import Logo from 'root/components/Logo';
 import Header from 'root/components/Header';
 
 import SEO from 'root/components/SEO';
-
-import kids from '../assets/kids.mp4';
-/* eslint-disable */
-import logo from '!file-loader!../assets/logoFkwl.svg';
-/* eslint-enable */
 
 import './index.css';
 
@@ -40,7 +32,7 @@ const IndexPage = () => {
           <FormattedMessage id="about3" />
         </div>
         <div styleName="textBlock">
-        <FormattedMessage id="about4" />,
+          <FormattedMessage id="about4" />,
         </div>
       </Text>
 
