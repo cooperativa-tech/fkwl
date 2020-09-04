@@ -10,9 +10,11 @@
 
   box-sizing: content-box;
 
+  max-width: calc(13 * var(--cell-length) + 14 * var(--gutter));
+
   padding: 0 var(--size-20);
   margin: 0 auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .line {

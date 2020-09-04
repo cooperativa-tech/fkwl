@@ -1,0 +1,97 @@
+@import '../../styles/variables.css';
+
+.textBlock {
+  max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
+  margin-bottom: var(--size-32);
+}
+
+.coloredWrapper {
+  padding: var(--size-76) var(--size-20);
+  margin: 0 calc(-1 * var(--size-20));
+
+  &.paleRed {
+    background: var(--color-pale-red);
+  }
+
+  &.orange {
+    background: var(--color-bright-orange);
+  }
+
+  @media (min-width: 700px) {
+    padding: 0;
+    border-radius: var(--size-8);
+    width: calc(9 * var(--cell-length) + 8 * var(--gutter));
+  }
+}
+
+.image {
+  width: 100%;
+  @media (min-width: 700px) {
+    width: calc(9 * var(--cell-length) + 8 * var(--gutter));
+  }
+}
+
+.imageWrapper {
+  @media (min-width: 700px) {
+    width: calc(9 * var(--cell-length) + 8 * var(--gutter));
+    height: 316px; /* height of container */
+    overflow: hidden;
+  }
+}
+
+.coloredSection {
+  color: white;
+}
+
+.ctaSection {
+  position: relative;
+}
+
+.textBlock {
+  position: relative;
+  max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
+}
+
+.smallSpacing {
+  margin-bottom: var(--size-32);
+}
+
+.mediumSpacing {
+  margin-bottom: var(--size-76);
+}
+
+.xlargeSpacing {
+  margin-bottom: var(--size-76);
+
+  @media (min-width: 700px) {
+    margin-bottom: var(--size-132);
+  }
+}
+
+.xxlargeSpacing {
+  margin-bottom: var(--size-56);
+
+  @media (min-width: 700px) {
+    margin-bottom: var(--size-132);
+  }
+}
+
+.bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.imageSection {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  width: calc(4 * var(--cell-length) + 4 * var(--gutter));
+  margin-top: var(--size-32);
+  margin-bottom: var(--size-32);
+
+  @media (min-width: 700px) {
+    width: calc(7 * var(--cell-length) + 6 * var(--gutter));
+    margin-top: var(--size-100);
+  }
+}

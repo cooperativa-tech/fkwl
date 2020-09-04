@@ -1,0 +1,27 @@
+@import '../../styles/variables.css';
+
+.root {
+  width: 155px;
+  height: 64px;
+
+  padding: var(--size-24) auto;
+  text-align: center;
+  color: var(--color-white);
+
+  background: var(--color-blue);
+
+  border-radius: var(--size-8);
+  font-family: var(--font-family-nunito);
+  font-size: var(--size-20);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--size-24);
+  cursor: pointer;
+
+  @media (min-width: 700px) {
+    width: 192px;
+    height: 80px;
+    font-size: var(--size-24);
+    line-height: var(--size-32);
+    padding: var(--size-24);
+  }
+}

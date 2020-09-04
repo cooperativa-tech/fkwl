@@ -7,6 +7,7 @@
   justify-content: center;
   margin: var(--size-32) 0 var(--size-44);
   overflow: visible;
+  max-width: calc(9 * var(--cell-length) + 8 * var(--gutter));
 }
 
 .image {

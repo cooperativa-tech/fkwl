@@ -1,0 +1,33 @@
+@import '../../styles/variables.css';
+
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: calc(8 * var(--cell-length) + 7 * var(--gutter));
+  height: 312px;
+  padding: var(--size-100) 108px;
+
+  background-color: var(--color-lime-green);
+  border-radius: var(--size-8);
+  color: white;
+
+  font-family: var(--font-family-nunito);
+  font-weight: var(--font-weight-bold);
+
+  @media (min-width: 700px) {
+    font-size: var(--size-44);
+    line-height: var(--size-56px);
+  }
+}
+
+.text {
+  display: flex;
+  width: calc(4 * var(--cell-length) + 3 * var(--gutter));
+  margin-right: calc(1 * var(--cell-length) + 2 * var(--gutter));
+}
+
+.icon {
+  display: flex;
+  margin-bottom: var(--size-32);
+}

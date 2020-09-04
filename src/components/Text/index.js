@@ -1,14 +1,17 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import "./index.css";
+import Size from './size';
 
-const Text = ({ children }) => {
-  return <div styleName="root">{children}</div>;
+import './index.css';
+
+const Text = ({ children, size }) => {
+  return <div styleName={`root ${size ? size : ''}`}>{children}</div>;
 };
 
 Text.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
+  size: PropTypes.oneOf([Size.normal, Size.large])
 };
 
 export default Text;
