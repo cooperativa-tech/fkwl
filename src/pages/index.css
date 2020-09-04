@@ -1,24 +1,78 @@
 @import '../styles/variables.css';
 
 .textBlock {
-  max-width: calc(6 * var(--cell-length) + 6 * var(--gutter));
+  max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
   margin-bottom: var(--size-32);
 }
 
 .bold {
   font-weight: var(--font-weight-bold);
 }
+
+.coloredText {
+  font-weight: var(--font-weight-bold);
+
+  &.yellow {
+    color: var(--color-bright-yellow);
+  }
+
+  &.orange {
+    color: var(--color-bright-orange);
+  }
+
+  &.blue {
+    color: var(--color-blue);
+  }
+
+  &.red {
+    color: var(--color-strong-red);
+  }
+}
+
+.ctaSection {
+  position: relative;
+}
+
 .emailAddress {
   color: var(--color-yellow);
 
   text-decoration: none;
 }
-.section {
-  margin-bottom: var(--size-32);
-}
 
-.text.bold {
-  margin-bottom: var(--size-32);
+.image {
+  position: absolute;
+
+  width: 412px;
+  overflow: hidden;
+
+  background-color: white;
+
+  &.cta {
+    top: -112px;
+    right: -330px;
+
+    padding: var(--size-12);
+
+    transform: rotate(-20deg);
+  }
+
+  &.section1 {
+    top: 276px;
+    right: -112px;
+
+    padding: var(--size-12);
+
+    transform: rotate(-9deg);
+  }
+
+  &.section2 {
+    top: 540px;
+    left: -112px;
+
+    padding: var(--size-12);
+
+    transform: rotate(5deg);
+  }
 }
 
 .imageSection {
@@ -34,6 +88,13 @@
   @media (min-width: 700px) {
     width: calc(7 * var(--cell-length) + 6 * var(--gutter));
     margin-top: var(--size-100);
+  }
+}
+
+.kid {
+  width: calc(4 * var(--cell-length) + 4 * var(--gutter));
+  @media (min-width: 700px) {
+    width: calc(7 * var(--cell-length) + 6 * var(--gutter));
   }
 }
 
@@ -53,11 +114,22 @@
   }
 }
 
-.kid {
-  width: calc(4 * var(--cell-length) + 4 * var(--gutter));
-  @media (min-width: 700px) {
-    width: calc(7 * var(--cell-length) + 6 * var(--gutter));
+.section {
+  &.normal {
+    margin-bottom: var(--size-32);
   }
+
+  &.xl {
+    margin-bottom: var(--size-76);
+  }
+
+  &.xxl {
+    margin-bottom: var(--size-100);
+  }
+}
+
+.text.bold {
+  margin-bottom: var(--size-32);
 }
 
 .video {

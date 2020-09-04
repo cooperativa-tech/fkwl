@@ -1,17 +1,13 @@
 import React from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 
-import BankDetails from 'root/components/BankDetails';
-import SocialDetails from 'root/components/SocialDetails';
 import Text from 'root/components/Text';
-import Logo from 'root/components/Logo';
+import Title from 'root/components/Title';
+import Cta from 'root/components/Cta';
 import Header from 'root/components/Header';
-import Gallery from 'root/components/Gallery';
 import SEO from 'root/components/SEO';
-
-import kids from '../assets/kids.mp4';
 /* eslint-disable */
-import logo from '!file-loader!../assets/logoFkwl.svg';
+import spiderManAndFriends from '!file-loader!../assets/gallery/1.jpg';
 /* eslint-enable */
 
 import './index.css';
@@ -30,56 +26,63 @@ const IndexPage = () => {
       <Header />
 
       <Text>
-        <div styleName="textBlock">
+        <div styleName="section xl">
           <FormattedMessage id="hello" />,
         </div>
         <div styleName="textBlock">
+          <img
+            styleName=" image section1"
+            src={spiderManAndFriends}
+            alt="kids playing spider man"
+          />
           <FormattedMessage id="home1" />
         </div>
         <div styleName="textBlock">
+          <img
+            styleName="image section2"
+            src={spiderManAndFriends}
+            alt="kids playing spider man"
+          />
+          <span styleName="coloredText yellow ">
+            <FormattedMessage id="coloredTextSection2" />
+          </span>
           <FormattedMessage id="home2" />
         </div>
         <div styleName="textBlock">
+          <span styleName="coloredText orange">
+            <FormattedMessage id="coloredTextSection3" />
+          </span>
           <FormattedMessage id="home3" />
         </div>
-      </Text>
-      <Gallery />
-      <Text>
         <div styleName="textBlock">
-          <FormattedMessage id="speakWithUs" />
-          <p styleName="bold text ">
-            <a
-              styleName="emailAddress"
-              href="mailto:fromkiberawithlove@gmail.com"
-            >
-              fromkiberawithlove@gmail.com
-            </a>
-          </p>
+          <span styleName="coloredText blue">
+            <FormattedMessage id="coloredTextSection4" />
+          </span>
+          <FormattedMessage id="home4" />
+        </div>
+        <div styleName="textBlock section xl">
+          <span styleName="coloredText red">
+            <FormattedMessage id="coloredTextSection5" />
+          </span>
+          <FormattedMessage id="home5" />
+        </div>
+
+        <div styleName="section xxl">
+          <Title>
+            <FormattedMessage id="title" />
+          </Title>
         </div>
       </Text>
-      <Text>
-        <FormattedMessage id="donatives" />
-      </Text>
-      <BankDetails
-        nib="0065 0921 00292680007 14"
-        iban="PT50 006509210029268000714"
-        swift="BESZ PT PL"
-      />
-      <Text>
-        <div styleName="textBlock">
-          <FormattedMessage id="moreInfo" />
-        </div>
-        <SocialDetails />
-        Asante Sana(Muito obrigado),
-        <p>From Kibera with Love</p>
-      </Text>
-      <div styleName="imageSection ">
-        <div styleName="logo">
-          <Logo src={logo} alt="From Kibera With Love Logo" />
-        </div>
-        <video muted autoPlay loop styleName="video">
-          <source src={kids} type="video/mp4" />
-        </video>
+
+      <div styleName="ctaSection">
+        <Cta>
+          <img
+            styleName="image cta"
+            src={spiderManAndFriends}
+            alt="kids playing spider man"
+          />
+          <FormattedMessage id="ctaHomePage" />
+        </Cta>
       </div>
     </>
   );

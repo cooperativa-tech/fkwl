@@ -2,6 +2,7 @@
 
 .root {
   width: 100%;
+  max-width: calc(4 * var(--cell-length) + 3 * var(--gutter));
   margin: 0 auto;
 
   color: var(--color-grey);
@@ -13,9 +14,9 @@
 }
 
 .normal {
-  max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
-
   @media (min-width: 700px) {
+    max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
+
     font-size: var(--size-32);
     line-height: var(--size-44);
   }
