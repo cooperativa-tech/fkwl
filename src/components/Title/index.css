@@ -14,9 +14,9 @@
 }
 
 .normal {
-  @media (min-width: 700px) {
-    max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
+  max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
 
+  @media (min-width: 700px) {
     font-size: var(--size-32);
     line-height: var(--size-44);
   }

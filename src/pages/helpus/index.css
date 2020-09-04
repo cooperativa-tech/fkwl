@@ -1,0 +1,112 @@
+@import '../../styles/variables.css';
+
+.bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.button {
+  position: absolute;
+  &.sponsership {
+    bottom: -140px;
+    transform: rotate(-5deg);
+
+    @media (min-width: 700px) {
+      bottom: -140px;
+      transform: rotate(-5deg);
+    }
+  }
+
+  &.volunteering {
+    bottom: -120px;
+    transform: rotate(7deg);
+
+    @media (min-width: 700px) {
+      bottom: -140px;
+      transform: rotate(5deg);
+    }
+  }
+}
+
+.coloredWrapper {
+  padding: var(--size-76) var(--size-20);
+  margin: 0 calc(-1 * var(--size-20));
+
+  &.paleRed {
+    background: var(--color-pale-red);
+  }
+
+  &.orange {
+    background: var(--color-bright-orange);
+  }
+
+  @media (min-width: 700px) {
+    padding: 0;
+    border-radius: var(--size-8);
+    width: calc(9 * var(--cell-length) + 8 * var(--gutter));
+  }
+}
+
+.coloredSection {
+  color: white;
+}
+
+.ctaSection {
+  position: relative;
+}
+
+.textBlock {
+  position: relative;
+  max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
+}
+
+.smallSpacing {
+  margin-bottom: var(--size-32);
+}
+
+.mediumSpacing {
+  margin-bottom: var(--size-76);
+}
+
+.xlargeSpacing {
+  position: relative;
+  margin-bottom: var(--size-100);
+}
+
+.xxlargeSpacing {
+  margin-bottom: var(--size-56);
+
+  @media (min-width: 700px) {
+    margin-bottom: var(--size-132);
+  }
+}
+
+.image {
+  position: absolute;
+
+  width: 412px;
+  overflow: hidden;
+
+  background-color: white;
+
+  &.volunteering {
+    top: -300px;
+    right: -490px;
+
+    padding: var(--size-12);
+
+    transform: rotate(-9deg);
+  }
+
+  &.partners {
+    top: 227px;
+    left: -450px;
+
+    padding: var(--size-12);
+
+    transform: rotate(5deg);
+  }
+}
+
+.separator {
+  margin: var(--size-32) auto;
+}
