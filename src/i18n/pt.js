@@ -19,5 +19,10 @@ module.exports = {
   `,
   speakWithUs: 'Para falar connosco, envia-nos um email para:',
   donatives: 'Para donativos, aqui tens a informação que precisas:',
-  moreInfo: 'E aqui podes encontrar mais informação sobre nós:'
+  moreInfo: 'E aqui podes encontrar mais informação sobre nós:',
+
+  footerAboutUs: `Sobre Nós`,
+  footerColFindUs: `Encontra-nos`,
+  footerColHelpUs: `Ajuda-nos`,
+  footerColContact: `hello@fromkiberawithlove.com`
 };

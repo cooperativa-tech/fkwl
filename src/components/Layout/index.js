@@ -6,6 +6,7 @@ import en from 'root/i18n/en';
 import pt from 'root/i18n/pt';
 
 import './index.css';
+import Footer from '../Footer';
 
 const messages = { en, pt };
 
@@ -19,6 +20,8 @@ function Layout({ children, pageContext }) {
   return (
     <IntlProvider locale={locale} messages={messages[locale]}>
       <div styleName="root">{children}</div>
+      <div styleName="line" />
+      <Footer />
     </IntlProvider>
   );
 }
