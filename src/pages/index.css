@@ -1,24 +1,105 @@
 @import '../styles/variables.css';
 
 .textBlock {
-  max-width: calc(6 * var(--cell-length) + 6 * var(--gutter));
+  max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
   margin-bottom: var(--size-32);
 }
 
 .bold {
   font-weight: var(--font-weight-bold);
 }
+
+.coloredText {
+  font-weight: var(--font-weight-bold);
+
+  &.yellow {
+    color: var(--color-bright-yellow);
+  }
+
+  &.orange {
+    color: var(--color-bright-orange);
+  }
+
+  &.blue {
+    color: var(--color-blue);
+  }
+
+  &.red {
+    color: var(--color-strong-red);
+  }
+}
+
+.ctaSection {
+  position: relative;
+
+  width: calc(4 * var(--cell-length) + 3 * var(--gutter));
+  padding: 0 var(--size-20);
+  margin-bottom: var(--size-132);
+
+  @media (min-width: 700px) {
+    width: calc(9 * var(--cell-length) + 8 * var(--gutter));
+  }
+}
+
 .emailAddress {
   color: var(--color-yellow);
 
   text-decoration: none;
 }
-.section {
-  margin-bottom: var(--size-32);
+
+.textBlockImage {
+  margin: var(--size-32 auto);
+
+  @media (min-width: 700px) {
+    width: calc(9 * var(--cell-length) + 8 * var(--gutter));
+    margin: auto;
+  }
 }
 
-.text.bold {
-  margin-bottom: var(--size-32);
+.section1 {
+  width: 276px;
+
+  @media (min-width: 700px) {
+    position: absolute;
+    top: 276px;
+    right: -112px;
+
+    width: 424px;
+
+    padding: var(--size-12);
+  }
+}
+
+.section2 {
+  width: 276px;
+
+  @media (min-width: 700px) {
+    position: absolute;
+    top: 660px;
+    left: -112px;
+
+    width: 424px;
+
+    padding: var(--size-12);
+  }
+}
+
+.cta {
+  position: absolute;
+  right: 20px;
+  bottom: -90px;
+
+  width: 210px;
+  overflow: hidden;
+
+  @media (min-width: 700px) {
+    top: -112px;
+    right: -330px;
+
+    width: 424px;
+
+    padding: var(--size-12);
+  }
 }
 
 .imageSection {
@@ -37,22 +118,6 @@
   }
 }
 
-.logo {
-  position: absolute;
-  top: -30px;
-  left: -20px;
-  z-index: 100;
-
-  width: 112px;
-
-  @media (min-width: 700px) {
-    top: -79px;
-    left: -97px;
-
-    width: 180px;
-  }
-}
-
 .kid {
   width: calc(4 * var(--cell-length) + 4 * var(--gutter));
   @media (min-width: 700px) {
@@ -60,7 +125,20 @@
   }
 }
 
-.video {
-  width: 728px;
-  height: auto;
+.section {
+  &.normal {
+    margin-bottom: var(--size-32);
+  }
+
+  &.xl {
+    margin-bottom: var(--size-76);
+  }
+
+  &.xxl {
+    margin-bottom: var(--size-100);
+  }
+}
+
+.text.bold {
+  margin-bottom: var(--size-32);
 }

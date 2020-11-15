@@ -1,0 +1,519 @@
+@import '../../styles/variables.css';
+
+.bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.coloredText {
+  font-weight: var(--font-weight-bold);
+
+  &.yellow {
+    color: var(--color-bright-yellow);
+  }
+
+  &.orange {
+    color: var(--color-bright-orange);
+  }
+
+  &.blue {
+    color: var(--color-blue);
+  }
+
+  &.red {
+    color: var(--color-strong-red);
+  }
+}
+
+.button {
+  position: absolute;
+
+  &.sponsership {
+    bottom: -140px;
+
+    @media (min-width: 700px) {
+      bottom: -140px;
+    }
+  }
+
+  &.volunteering {
+    bottom: -120px;
+
+    @media (min-width: 700px) {
+      bottom: -140px;
+    }
+  }
+}
+
+.abtouUsTitle {
+  width: 100%;
+
+  @media (min-width: 700px) {
+    width: calc(5 * var(--cell-length) + 4 * var(--gutter));
+
+    text-align: center;
+  }
+}
+
+.widtherSection {
+  width: 100%;
+  margin: var(--size-132);
+
+  &.reverse {
+    @media (min-width: 700px) {
+      display: flex;
+      flex-direction: row-reverse;
+      margin-left: calc(5 * var(--cell-length) + 4 * var(--gutter));
+    }
+
+    @media (min-width: 700px) {
+      width: calc(11 * var(--cell-length) + 10 * var(--gutter));
+    }
+  }
+}
+
+.coloredWrapper {
+  padding: var(--size-76) var(--size-20);
+  margin: 0 calc(-1 * var(--size-20));
+
+  &.paleRed {
+    background: var(--color-pale-red);
+  }
+
+  &.orange {
+    background: var(--color-bright-orange);
+  }
+
+  @media (min-width: 700px) {
+    width: calc(9 * var(--cell-length) + 8 * var(--gutter));
+    padding: 0;
+
+    border-radius: var(--size-8);
+  }
+}
+
+.ctaSection {
+  position: relative;
+
+  width: calc(4 * var(--cell-length) + 3 * var(--gutter));
+  padding: 0 var(--size-20);
+  margin-bottom: var(--size-132);
+
+  @media (min-width: 700px) {
+    width: calc(9 * var(--cell-length) + 8 * var(--gutter));
+  }
+}
+
+.cta {
+  position: absolute;
+  right: 20px;
+
+  bottom: -90px;
+
+  width: 210px;
+  overflow: hidden;
+
+  @media (min-width: 700px) {
+    top: -112px;
+    right: -330px;
+
+    width: 424px;
+
+    padding: var(--size-12);
+  }
+}
+
+.coloredSection {
+  color: white;
+}
+
+.activitiesSection {
+  position: relative;
+
+  display: flex;
+  flex-direction: row-reverse;
+  width: calc(11 * var(--cell-length) + 10 * var(--gutter));
+}
+
+.textBlock {
+  position: relative;
+
+  width: 100%;
+  max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
+}
+
+.smallSpacing {
+  margin-bottom: var(--size-32);
+}
+
+.mediumSpacing {
+  margin-bottom: var(--size-76);
+}
+
+.xlargeSpacing {
+  position: relative;
+
+  margin-bottom: var(--size-100);
+}
+
+.xxlargeSpacing {
+  margin-bottom: var(--size-56);
+
+  @media (min-width: 700px) {
+    margin-bottom: var(--size-132);
+  }
+}
+
+.xxxlargeSpacing {
+  position: relative;
+
+  margin-bottom: 256px;
+  @media (min-width: 700px) {
+    margin-bottom: var(--size-132);
+  }
+}
+
+.educationImage {
+  width: 276px;
+
+  padding: var(--size-12);
+
+  margin: var(--size-32);
+  overflow: hidden;
+
+  @media (min-width: 700px) {
+    position: absolute;
+    top: -232px;
+    right: -306px;
+
+    width: 276px;
+  }
+}
+
+.educationImageTwo {
+  display: none;
+
+  @media (min-width: 700px) {
+    position: absolute;
+    position: absolute;
+
+    top: 20px;
+    right: -490px;
+
+    display: block;
+    width: 371px;
+    padding: var(--size-12);
+    padding: var(--size-12);
+    overflow: hidden;
+  }
+}
+
+.activitiesImage {
+  width: 210px;
+
+  padding: var(--size-12);
+  overflow: hidden;
+
+  @media (min-width: 700px) {
+    position: absolute;
+    top: -87px;
+    left: -100px;
+    z-index: 3;
+
+    width: 210px;
+
+    padding: var(--size-12);
+
+    padding: var(--size-12);
+  }
+}
+
+.activitiesImageTwo {
+  display: none;
+
+  padding: var(--size-12);
+
+  @media (min-width: 700px) {
+    position: absolute;
+    position: absolute;
+    top: 58px;
+    left: -320px;
+    z-index: 2;
+
+    display: block;
+    width: 371px;
+
+    padding: var(--size-12);
+
+    padding: var(--size-12);
+    overflow: hidden;
+  }
+}
+
+.activitiesImageThree {
+  display: none;
+
+  padding: var(--size-12);
+
+  @media (min-width: 700px) {
+    position: absolute;
+    top: 410px;
+    left: -235px;
+    z-index: 1;
+
+    display: block;
+    width: 276px;
+
+    padding: var(--size-12);
+    overflow: hidden;
+  }
+}
+
+.activitiesImageFour {
+  display: none;
+
+  padding: var(--size-12);
+
+  @media (min-width: 700px) {
+    position: absolute;
+    position: absolute;
+    bottom: -203px;
+    left: -32px;
+    z-index: 0;
+
+    display: block;
+    width: 412px;
+    width: 210px;
+
+    padding: var(--size-12);
+    overflow: hidden;
+  }
+}
+
+.healthImage {
+  width: 412px;
+
+  padding: var(--size-12);
+  overflow: hidden;
+
+  @media (min-width: 700px) {
+    position: absolute;
+    top: -78px;
+    right: -250px;
+
+    width: 276px;
+
+    padding: var(--size-12);
+  }
+}
+
+.healthImageTwo {
+  position: absolute;
+
+  width: 412px;
+
+  padding: var(--size-12);
+  overflow: hidden;
+
+  @media (min-width: 700px) {
+    position: absolute;
+    position: absolute;
+
+    top: 190px;
+    right: -490px;
+
+    width: 371px;
+    padding: var(--size-12);
+  }
+}
+
+.feedingImage {
+  width: 400px;
+
+  padding: var(--size-12);
+
+  margin-top: var(--size-100);
+  overflow: hidden;
+
+  @media (min-width: 700px) {
+    position: absolute;
+    position: absolute;
+
+    top: -70px;
+    right: -440px;
+
+    width: 371px;
+
+    padding: var(--size-12);
+    margin-top: 0;
+  }
+}
+
+.healthImage {
+  position: absolute;
+
+  width: 276px;
+
+  padding: var(--size-12);
+  overflow: hidden;
+
+  @media (min-width: 700px) {
+    position: absolute;
+    top: -87px;
+    left: -150px;
+
+    width: 276px;
+
+    padding: var(--size-12);
+
+    padding: var(--size-12);
+  }
+}
+
+.healthImageTwo {
+  display: none;
+  width: 412px;
+
+  padding: var(--size-12);
+  overflow: hidden;
+
+  @media (min-width: 700px) {
+    position: absolute;
+    position: absolute;
+    top: 180px;
+    left: -190px;
+
+    display: block;
+    width: 276px;
+
+    padding: var(--size-12);
+
+    padding: var(--size-12);
+  }
+}
+
+.clothingImage {
+  position: absolute;
+
+  width: 210px;
+  padding: var(--size-12);
+  right: -22px;
+  margin-top: var(--size-32);
+  margin-left: var(--size-44);
+  overflow: hidden;
+
+  @media (min-width: 700px) {
+    position: absolute;
+    top: -78px;
+    right: -400px;
+
+    width: 371px;
+
+    padding: var(--size-12);
+  }
+}
+
+.clothingImageTwo {
+  display: none;
+
+  @media (min-width: 700px) {
+    position: absolute;
+    position: absolute;
+
+    top: 190px;
+    right: -490px;
+
+    display: block;
+    width: 276px;
+    padding: var(--size-12);
+    padding: var(--size-12);
+  }
+}
+.familySupportImageWrapper {
+  position: relative;
+
+  margin-bottom: 250px;
+}
+
+.familySupportImage {
+  position: absolute;
+  top: 14px;
+  left: -40px;
+
+  width: 371px;
+
+  padding: var(--size-12);
+  overflow: hidden;
+
+  @media (min-width: 700px) {
+    position: absolute;
+    top: -78px;
+    left: -450px;
+    z-index: 1;
+
+    width: 371px;
+
+    padding: var(--size-12);
+  }
+}
+
+.familySupportImageTwo {
+  display: none;
+
+  @media (min-width: 700px) {
+    position: absolute;
+    top: 268px;
+    left: -370px;
+
+    z-index: 0;
+
+    display: block;
+    width: 276px;
+    padding: var(--size-12);
+  }
+}
+
+.microCreditimageWrapper {
+  margin-top: var(--size-12);
+  margin-bottom: 500px;
+  @media (min-width: 700px) {
+    margin-bottom: 0;
+  }
+}
+
+.microCreditImage {
+  position: absolute;
+
+  right: -36px;
+
+  width: 302px;
+
+  padding: var(--size-12);
+  overflow: hidden;
+
+  @media (min-width: 700px) {
+    position: absolute;
+    position: absolute;
+
+    top: -70px;
+    right: -440px;
+
+    width: 371px;
+
+    padding: var(--size-12);
+  }
+}
+.ctaImage {
+  position: absolute;
+  right: 0px;
+
+  bottom: -77px;
+
+  width: 210px;
+
+  padding: var(--size-12);
+  overflow: hidden;
+
+  @media (min-width: 700px) {
+    display: none;
+  }
+}

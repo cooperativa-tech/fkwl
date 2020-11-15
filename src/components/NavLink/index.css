@@ -1,0 +1,19 @@
+@import '../../styles/variables.css';
+
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  & a {
+    color: inherit;
+    cursor: pointer;
+
+    text-decoration: none;
+  }
+}
+
+.helpUs {
+  color: var(--color-bright-orange);
+}

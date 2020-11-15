@@ -1,0 +1,33 @@
+@import '../../styles/variables.css';
+
+.root {
+  width: 100%;
+  margin: 0 auto;
+
+  color: var(--color-grey);
+
+  font-family: var(--font-family-nunito);
+  font-weight: var(--font-weight-bold);
+}
+
+.normal {
+  max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
+
+  @media (min-width: 700px) {
+    font-size: var(--size-32);
+    line-height: var(--size-44);
+  }
+}
+
+.large {
+  max-width: calc(11 * var(--cell-length) + 10 * var(--gutter));
+
+  font-size: var(--size-24);
+  line-height: var(--size-32);
+  text-align: center;
+
+  @media (min-width: 700px) {
+    font-size: var(--size-44);
+    line-height: var(--size-56);
+  }
+}

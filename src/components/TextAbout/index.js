@@ -5,13 +5,13 @@ import Size from './size';
 
 import './index.css';
 
-const Text = ({ children, size }) => {
+const TextAbout = ({ children, size }) => {
   return <div styleName={`root ${size ? size : ''}`}>{children}</div>;
 };
 
-Text.propTypes = {
+TextAbout.propTypes = {
   children: PropTypes.node.isRequired,
   size: PropTypes.oneOf([Size.normal, Size.large])
 };
 
-export default Text;
+export default TextAbout;

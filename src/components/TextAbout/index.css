@@ -2,8 +2,7 @@
 
 .root {
   width: 100%;
-  max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
-  margin: 0 auto;
+  max-width: calc(6 * var(--cell-length) + 5 * var(--gutter));
 
   color: var(--color-grey);
 
@@ -29,8 +28,6 @@
 
   @media (min-width: 700px) {
     max-width: calc(9 * var(--cell-length) + 8 * var(--gutter));
-
-    padding: var(--size-100);
 
     border-radius: var(--size-8);
 

@@ -5,21 +5,21 @@
 
   margin: var(--size-20) 0;
 
+  font-size: var(--size-24);
+  line-height: var(--size-32);
+
   @media (--desktop-breakpoint) {
     margin: var(--size-32);
   }
 }
+.textBlock:first-child {
+  margin-bottom: var(--size-24);
+}
 
 .textBlock a {
-  margin-left: 20px;
-
   color: var(--color-red);
 
   text-decoration: none;
-
-  @media (min-width: 700px) {
-    margin-left: 0;
-  }
 }
 
 .bold {

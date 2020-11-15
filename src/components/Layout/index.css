@@ -10,7 +10,25 @@
 
   box-sizing: content-box;
 
+  max-width: calc(13 * var(--cell-length) + 14 * var(--gutter));
+
   padding: 0 var(--size-20);
   margin: 0 auto;
-  overflow-x: hidden;
+  overflow: hidden;
+
+  @media (min-width: 700px) {
+    padding: 0;
+  }
+}
+
+.line {
+  display: block;
+  max-width: calc(4 * var(--cell-length) + 3 * var(--gutter));
+  margin: var(--size-56) auto;
+
+  border-bottom: 1px solid var(--color-light-grey);
+
+  @media (min-width: 700px) {
+    max-width: calc(11 * var(--cell-length) + 10 * var(--gutter));
+  }
 }

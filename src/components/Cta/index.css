@@ -1,0 +1,62 @@
+@import '../../styles/variables.css';
+
+.root {
+  width: 100%;
+  height: 312px;
+
+  padding: var(--size-76) var(--size-20);
+
+  background-color: var(--color-blue);
+  color: white;
+
+  font-family: var(--font-family-nunito);
+
+  font-size: var(--size-32);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--size-44px);
+
+  @media (min-width: 700px) {
+    display: flex;
+    padding: var(--size-100) 108px;
+
+    border-radius: var(--size-8);
+
+    font-size: var(--size-44);
+    line-height: var(--size-56px);
+  }
+}
+
+.image {
+  width: var(--size-32);
+
+  @media (min-width: 700px) {
+    width: var(--size-44);
+  }
+}
+.imageContainer {
+  @media (min-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-content: flex-end;
+    margin-bottom: var(--size-32);
+  }
+}
+
+.imageContainer a {
+  color: var(--color-white);
+
+  text-decoration: none;
+}
+
+.text {
+  margin-bottom: var(--size-32);
+
+  @media (min-width: 700px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-right: calc(1 * var(--cell-length) + 2 * var(--gutter));
+  }
+}
