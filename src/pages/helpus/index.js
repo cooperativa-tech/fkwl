@@ -135,7 +135,7 @@ const IndexPage = () => {
             <FormattedMessage id="helpUsCtaHelpUs" />
             <br />
             <span styleName="bold email">
-              <a href="mailto:sponsers@fromkiberawithlove.com">
+              <a href="mailto:sponsors@fromkiberawithlove.com">
                 <FormattedMessage id="sponsprsEmail" />
               </a>
             </span>
