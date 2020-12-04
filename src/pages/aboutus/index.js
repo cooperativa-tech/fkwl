@@ -225,12 +225,6 @@ const IndexPage = () => {
         </TextAbout>
       </div>
 
-      <Text size={Size.large}>
-        <div styleName="textBlock smallSpacing">
-          <FormattedMessage id="aboutText" />
-        </div>
-      </Text>
-
       <div styleName="ctaSection">
         <Cta>
           <FormattedMessage id="aboutCtaText" />

@@ -146,7 +146,9 @@
 }
 
 .mediumSpacing {
-  margin-bottom: var(--size-76);
+  @media (min-width: 700px) {
+    margin-bottom: var(--size-76);
+  }
 }
 
 .xlargeSpacing {
@@ -156,7 +158,7 @@
 }
 
 .xxlargeSpacing {
-  margin-bottom: var(--size-56);
+  margin-bottom: var(--size-32);
 
   @media (min-width: 700px) {
     margin-bottom: var(--size-132);
@@ -166,19 +168,15 @@
 .xxxlargeSpacing {
   position: relative;
 
-  margin-bottom: 256px;
+  margin-bottom: var(--size-32);
+
   @media (min-width: 700px) {
     margin-bottom: var(--size-132);
   }
 }
 
 .educationImage {
-  width: 276px;
-
-  padding: var(--size-12);
-
-  margin: var(--size-32);
-  overflow: hidden;
+  display: none;
 
   @media (min-width: 700px) {
     position: absolute;
@@ -190,10 +188,13 @@
 }
 
 .educationImageTwo {
-  display: none;
+  width: 276px;
+
+  padding: var(--size-12);
+
+  overflow: hidden;
 
   @media (min-width: 700px) {
-    position: absolute;
     position: absolute;
 
     top: 20px;
@@ -202,16 +203,12 @@
     display: block;
     width: 371px;
     padding: var(--size-12);
-    padding: var(--size-12);
     overflow: hidden;
   }
 }
 
 .activitiesImage {
-  width: 210px;
-
-  padding: var(--size-12);
-  overflow: hidden;
+  display: none;
 
   @media (min-width: 700px) {
     position: absolute;
@@ -228,9 +225,11 @@
 }
 
 .activitiesImageTwo {
-  display: none;
+  width: 276px;
 
   padding: var(--size-12);
+  overflow: hidden;
+  transform: rotate(-35deg);
 
   @media (min-width: 700px) {
     position: absolute;
@@ -275,7 +274,6 @@
 
   @media (min-width: 700px) {
     position: absolute;
-    position: absolute;
     bottom: -203px;
     left: -32px;
     z-index: 0;
@@ -286,43 +284,6 @@
 
     padding: var(--size-12);
     overflow: hidden;
-  }
-}
-
-.healthImage {
-  width: 412px;
-
-  padding: var(--size-12);
-  overflow: hidden;
-
-  @media (min-width: 700px) {
-    position: absolute;
-    top: -78px;
-    right: -250px;
-
-    width: 276px;
-
-    padding: var(--size-12);
-  }
-}
-
-.healthImageTwo {
-  position: absolute;
-
-  width: 412px;
-
-  padding: var(--size-12);
-  overflow: hidden;
-
-  @media (min-width: 700px) {
-    position: absolute;
-    position: absolute;
-
-    top: 190px;
-    right: -490px;
-
-    width: 371px;
-    padding: var(--size-12);
   }
 }
 
@@ -349,12 +310,11 @@
 }
 
 .healthImage {
-  position: absolute;
-
   width: 276px;
 
   padding: var(--size-12);
   overflow: hidden;
+  margin-bottom: 32px;
 
   @media (min-width: 700px) {
     position: absolute;
@@ -362,8 +322,6 @@
     left: -150px;
 
     width: 276px;
-
-    padding: var(--size-12);
 
     padding: var(--size-12);
   }
@@ -378,7 +336,6 @@
 
   @media (min-width: 700px) {
     position: absolute;
-    position: absolute;
     top: 180px;
     left: -190px;
 
@@ -392,9 +349,7 @@
 }
 
 .clothingImage {
-  position: absolute;
-
-  width: 210px;
+  width: 276px;
   padding: var(--size-12);
   right: -22px;
   margin-top: var(--size-32);
@@ -512,6 +467,8 @@
 
   padding: var(--size-12);
   overflow: hidden;
+
+  transform: rotate(-35deg);
 
   @media (min-width: 700px) {
     display: none;

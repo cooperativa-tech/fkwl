@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
         <div styleName="xsmallSpacing">
           <Link
-            to={`${locale === 'pt' ? '/helplus' : '/en/helpus'}`}
+            to={`${locale === 'pt' ? '/helpus' : '/en/helpus'}`}
             styleName="xsmallSpacing"
           >
             <span styleName="orange">
