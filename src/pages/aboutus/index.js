@@ -81,7 +81,10 @@ const IndexPage = () => {
             </TitleAbout>
           </div>
           <div styleName="textBlock smallSpacing">
-            <FormattedMessage id="activitiesText" />
+            <FormattedMessage id="activitiesTextOne" />
+          </div>
+          <div styleName="textBlock smallSpacing">
+            <FormattedMessage id="activitiesTextTwo" />
           </div>
         </TextAbout>
         <img
