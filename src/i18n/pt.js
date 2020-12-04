@@ -7,13 +7,13 @@ module.exports = {
   title: `
 	Somos From Kibera with Love.`,
   coloredTextSection2: `
-	Somos a Marta`,
+	Somos a Marta `,
   coloredTextSection3: `
-	Somos as 70 crianças`,
+	Somos as 70 crianças `,
   coloredTextSection4: `
-	Somos também as 50 famílias`,
+	Somos também as 50 famílias `,
   coloredTextSection5: `
-	E somos todos os voluntários, colaboradores, parceiros, padrinhos,`,
+	E somos todos os voluntários, colaboradores, parceiros, padrinhos, `,
   findUs: 'Vem Conhecer-nos',
   helpUs: 'Ajuda-nos',
   aboutUs: 'Sobre Nós',
