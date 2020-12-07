@@ -81,7 +81,7 @@ const IndexPage = () => {
       </Text>
 
       <div styleName="ctaSection">
-        <Cta page="/helpus">
+        <Cta>
           <img
             styleName="cta"
             src={homePageThree}

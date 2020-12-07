@@ -15,7 +15,7 @@ const Cta = ({ children }) => {
       <div styleName="root">
         <div styleName="text">{children}</div>
         <div styleName="imageContainer">
-          <Link to={`${locale === 'pt' ? '/findus/' : '/en/findus'}`}>
+          <Link to={`${locale === 'pt' ? '/helpus/' : '/en/helpus'}`}>
             <img styleName="image" src={arrow} alt="arrowIcon" />
           </Link>
         </div>

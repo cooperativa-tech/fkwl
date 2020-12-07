@@ -45,7 +45,7 @@ const Header = () => {
 
         <div styleName="navbarLinks right">
           <span styleName="marginRigth hide">
-            <NavLink
+            <Link
               to="https://us20.list-manage.com/contact-form?u=2cbdaed2bae12c72704145ae3&form_id=aa9f0dcc695ba93a4b6b1a885a6e14dd"
               target="_blank"
               rel="noopener noreferrer"
@@ -53,7 +53,7 @@ const Header = () => {
               <span styleName="blue">
                 <FormattedMessage id="contactUs" />
               </span>
-            </NavLink>
+            </Link>
           </span>
 
           <span styleName="marginRigth helpUs">
