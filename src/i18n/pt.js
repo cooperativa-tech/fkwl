@@ -103,7 +103,7 @@ Também temos a Academia da Ciência, para experiências químicas; o Clube das 
   volunteeringButton: `Voluntariar`,
 
   //Find us page
-  findusOne: `s portas do nosso centro estão sempre abertas para as crianças e suas famílias, mas também para todos que queiram conhecer o nosso projeto.`,
+  findusOne: `As portas do nosso centro estão sempre abertas para as crianças e suas famílias, mas também para todos que queiram conhecer o nosso projeto.`,
   findusTwo: `Para quem está de visita ao Quénia criamos uma tour solidária para descobrir o Quénia tal como ele é, in loco. Com passagem pelos principais pontos emblemáticos de Nairobi, sem deixar de parte o Orfanato dos Elefantes e o Girafe Center, estes dias inesquecíveis contam ainda com uma visita autêntica a Kibera. Como não podia deixar de ser, inclui o tão desejado safari africano com vista para o Kilimanjaro e ainda muitos mergulhos no Oceano Índico, sem deixar de fora os locais históricos de Mombasa. O melhor de tudo é a possibilidade de passarem uns dias no nosso centro, a conviver e a apaixonarem-se pelas crianças que apoiamos. `,
   findusCta: `Para saberes mais`,
   findusEmail: `tour@fromkiberawithlove.com`,
