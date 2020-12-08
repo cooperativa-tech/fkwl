@@ -5,7 +5,7 @@ import Size from '../Text/size';
 import './index.css';
 
 const Title = ({ children, size }) => {
-  return <div styleName={` root ${size ? size : ''}`}>{children}</div>;
+  return <div styleName={` root ${size || ''}`}>{children}</div>;
 };
 
 Title.propTypes = {

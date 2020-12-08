@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
-import NavLink from '../NavLink';
-import { FormattedMessage } from 'react-intl';
-import { useIntl } from 'react-intl';
+import { FormattedMessage, useIntl } from 'react-intl';
+
 import { Link } from 'gatsby';
+import NavLink from '../NavLink';
 import Logo from '../Logo';
 import Overlay from './Overlay';
 
@@ -50,10 +50,20 @@ const Helpus = () => {
 const MobileNav = () => {
   const [showMenu, setShowMenu] = useState(false);
 
+  const handleClick = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <>
       <div styleName="nav">
-        <div styleName="hamburguer" onClick={() => setShowMenu(!showMenu)}>
+        <div
+          tabIndex={0}
+          role="button"
+          styleName="hamburguer"
+          onClick={handleClick}
+          onKeyDown={handleClick}
+        >
           {showMenu ? (
             <img src={closeIcon} alt="Close Icon" />
           ) : (

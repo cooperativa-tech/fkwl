@@ -1,5 +1,5 @@
 module.exports = {
-  //homepage
+  // homepage
   hello: 'Hello',
   keywords: 'fkwl, from, kibera, with, love, kenya, volunteering, kids',
   contactUs: 'Contact Us',
@@ -20,7 +20,7 @@ module.exports = {
   home3: `that this project supports, giving them access to education, extracurricular activities, food, health care, clothing and footwear, and a lot of love and affection.`,
   home4: `that this project helps through psychological support, assistance dealing with socioeconomic, cultural, and religious problems, and through the improvement of the hygienic-sanitary conditions they live in.`,
   home5: `that make this project a reality.`,
-  //aboutUs page
+  // aboutUs page
 
   aboutUsTitle: `70 crianças e jovens 365 dias por ano`,
   educationTitle: `Education`,
@@ -47,7 +47,7 @@ We also make sure to celebrate the birthdays of all our kids with a party at the
 
   aboutText: `Por forma a possibilitar um futuro para estas crianças as áreas onde temos de intervir são imensas e por isso toda a ajuda é mais que bem-vinda e necessária.`,
   aboutCtaText: `Find out how you can help us`,
-  //Footer
+  // Footer
   footerColAboutUs: `About Us `,
   footerColFindUs: `Find Us`,
   footerColHelpUs: `Help Us`,
@@ -62,7 +62,7 @@ We also make sure to celebrate the birthdays of all our kids with a party at the
   footerSponsorEmail: `@fromkiberawithlove.com`,
   footerTourEmail: `@fromkiberawithlove.com`,
 
-  //help us page
+  // help us page
   helpUsTitle: `By becoming a volunteer, a sponsor, or a partner, you can help this project grow and reach more kids.`,
 
   patronizeTitle: `Sponsorship`,
@@ -90,11 +90,10 @@ We are always in need of more helpful hands, especially in Portugal where our ne
   godfatherButton: `Sponsorship`,
   volunteeringButton: `Volunteer`,
 
-  //Find us page
+  // Find us page
   findusOne: `The doors of our house are always open to our kids and their families, but also to everyone who wants to know about our project.`,
   findusTwo: `For those visiting Kenya, we created a solidary tour to discover Kenya in its true essence. Passing through the main emblematic points of Nairobi, without leaving aside the Elephant Orphanage and Giraffe Center, these unforgettable days also have an authentic visit to Kibera. As it should be, it includes the much-desired African safari with sightseeing of Kilimanjaro and also many dives in the Indian Ocean, without leaving out the historic sites of Mombasa. The best of all is the opportunity of spending a few days in our home, mingling and falling in love with the children we support.  `,
 
   findusCta: `For more information related to our solidary tour send us an email at`,
-  findusEmail: `tour@fromkiberawithlove.com`,
-  volunteeringButton: `Volunteer`
+  findusEmail: `tour@fromkiberawithlove.com`
 };

@@ -202,7 +202,6 @@
 
     display: block;
     width: 371px;
-    padding: var(--size-12);
     overflow: hidden;
   }
 }
@@ -216,9 +215,9 @@
     left: -100px;
     z-index: 3;
 
-    width: 210px;
+    display: block;
 
-    padding: var(--size-12);
+    width: 210px;
 
     padding: var(--size-12);
   }
@@ -229,10 +228,10 @@
 
   padding: var(--size-12);
   overflow: hidden;
+
   transform: rotate(-35deg);
 
   @media (min-width: 700px) {
-    position: absolute;
     position: absolute;
     top: 58px;
     left: -320px;
@@ -241,10 +240,9 @@
     display: block;
     width: 371px;
 
-    padding: var(--size-12);
-
-    padding: var(--size-12);
     overflow: hidden;
+
+    transform: rotate(0deg);
   }
 }
 
@@ -262,7 +260,6 @@
     display: block;
     width: 276px;
 
-    padding: var(--size-12);
     overflow: hidden;
   }
 }
@@ -282,7 +279,6 @@
     width: 412px;
     width: 210px;
 
-    padding: var(--size-12);
     overflow: hidden;
   }
 }
@@ -304,7 +300,6 @@
 
     width: 371px;
 
-    padding: var(--size-12);
     margin-top: 0;
   }
 }
@@ -313,8 +308,8 @@
   width: 276px;
 
   padding: var(--size-12);
-  overflow: hidden;
   margin-bottom: 32px;
+  overflow: hidden;
 
   @media (min-width: 700px) {
     position: absolute;
@@ -322,8 +317,6 @@
     left: -150px;
 
     width: 276px;
-
-    padding: var(--size-12);
   }
 }
 
@@ -341,17 +334,14 @@
 
     display: block;
     width: 276px;
-
-    padding: var(--size-12);
-
-    padding: var(--size-12);
   }
 }
 
 .clothingImage {
+  right: -22px;
+
   width: 276px;
   padding: var(--size-12);
-  right: -22px;
   margin-top: var(--size-32);
   margin-left: var(--size-44);
   overflow: hidden;
@@ -362,8 +352,6 @@
     right: -400px;
 
     width: 371px;
-
-    padding: var(--size-12);
   }
 }
 
@@ -379,7 +367,6 @@
 
     display: block;
     width: 276px;
-    padding: var(--size-12);
     padding: var(--size-12);
   }
 }
@@ -406,8 +393,6 @@
     z-index: 1;
 
     width: 371px;
-
-    padding: var(--size-12);
   }
 }
 
@@ -453,8 +438,6 @@
     right: -440px;
 
     width: 371px;
-
-    padding: var(--size-12);
   }
 }
 .ctaImage {

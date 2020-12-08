@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, useIntl } from 'react-intl';
 import SocialDetails from 'root/components/SocialDetails';
-
-import { useIntl } from 'react-intl';
 
 import Logo from '../Logo';
 
