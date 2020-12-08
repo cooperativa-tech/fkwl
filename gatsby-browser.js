@@ -15,7 +15,7 @@ export const onClientEntry = async () => {
   if (typeof Set === 'undefined') {
     await import('core-js/es6/set');
   }
-
+  /*eslint-disable */
   if (typeof window.requestAnimationFrame === 'undefined') {
     import('raf/polyfill');
   }

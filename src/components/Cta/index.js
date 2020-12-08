@@ -25,8 +25,7 @@ const Cta = ({ children }) => {
 };
 
 Cta.propTypes = {
-  children: PropTypes.node.isRequired,
-  page: PropTypes.string
+  children: PropTypes.node.isRequired
 };
 
 export default Cta;

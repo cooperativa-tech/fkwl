@@ -6,7 +6,7 @@ import Size from './size';
 import './index.css';
 
 const TextAbout = ({ children, size }) => {
-  return <div styleName={`root ${size ? size : ''}`}>{children}</div>;
+  return <div styleName={`root ${size || ''}`}>{children}</div>;
 };
 
 TextAbout.propTypes = {

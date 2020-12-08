@@ -7,13 +7,16 @@
   "extends": [
     "airbnb",
     "prettier",
+		"eslint-config-prettier",
     "prettier/react",
     "plugin:jsx-a11y/recommended"
+
   ],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "class-methods-use-this": 0,
+		 "no-unused-expression": off,
     "consistent-return": 0,
     "react/no-multi-comp": [
       2,

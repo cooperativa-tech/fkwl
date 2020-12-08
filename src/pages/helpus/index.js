@@ -7,12 +7,12 @@ import Header from 'root/components/Header';
 import SEO from 'root/components/SEO';
 import Size from 'root/components/Text/size';
 /* eslint-disable */
+import Button from 'root/components/Button';
 import volunteeringPortualOne from '!file-loader!../../assets/helpUs/volunteeringPortugalOne.png';
 import sponsersOne from '!file-loader!../../assets/helpUs/sponsersOne.png';
 /* eslint-enable */
 
 import './index.css';
-import Button from 'root/components/Button';
 
 const IndexPage = () => {
   const { formatMessage } = useIntl();

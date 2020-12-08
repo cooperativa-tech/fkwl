@@ -29,7 +29,7 @@ const NavLink = ({ children, to, id }) => {
         </Link>
       ) : (
         <Link to={to} activeStyle={activeStyleHelpUs}>
-          <span styleName="helpUs">{childrenl}</span>
+          <span styleName="helpUs">{children}</span>
         </Link>
       )}
     </>

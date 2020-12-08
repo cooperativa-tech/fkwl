@@ -1,5 +1,5 @@
 module.exports = {
-  //homepage
+  // homepage
   hello: 'Olá',
   keywords: 'fkwl, from, kibera, with, love, kenya, volunteering, kids',
   contactUs: 'Contacta-nos',
@@ -31,16 +31,15 @@ module.exports = {
 	que este projeto ajuda através de apoio psicológico e acompanhamento às famílias na gestão de problemas 
 	socioeconómicos, culturais e religiosos e na melhoria das condições higiênico-sanitárias em que vivem.`,
   home5: `que tornam este projeto uma realidade.`,
-  //aboutUs page
+  // aboutUs page
   aboutUsTitle: `70 crianças e jovens 365 dias por ano`,
   educationTitle: `Educação`,
-  educationText: `A educação em Kibera não é uma prioridade para o estado nem para as famílias por falta de possibilidades financeiras, por isso, de forma às crianças terem acesso  a educação de qualidade, com a sua ajuda financiamos desde a educação básica à universidade. Aqui cobrimos os gastos com mensalidades/propinas, material escolar, uniforme, visitas de estudo, alojamento, transporte e alimentação.`,
+  educationText: `A educação em Kibera não é uma prioridade para o estado nem para as famílias por falta de possibilidades financeiras, por isso, de forma às crianças terem acesso a educação de qualidade, com a sua ajuda financiamos desde a educação básica à universidade. Aqui cobrimos os gastos com mensalidades/propinas, material escolar, uniforme, visitas de estudo, alojamento, transporte e alimentação.`,
 
   activitiesTitle: `Atividades extracurriculares`,
   activitiesTextOne: `É crucial que os hábitos e interesses pela escola não se desvaneçam com as dificuldades que as crianças encontram em casa. Por isso, providenciamos apoio escolar individualizado e atividades extracurriculares como aulas de ballet, karaté, natação, futebol, acrobática, tecnologias de informação e comunicação, entre outras. Este apoio continua no período das férias escolares, onde realizamos as mais variadas atividades, desde revisão de matéria, estudo para exames, cursos de Microsoft Office, visitas de estudo`,
 
-  activitiesTextTwo: `
-Também temos a Academia da Ciência, para experiências químicas; o Clube das Artes para moldagem de papel, pintura com guaches, recortes, leitura e cinema; a Hora do Planeta, onde o tempo é dedicado à separação do lixo, reciclagem, proteção da natureza e limpeza do meio ambiente envolvente. Há tempo para desporto, como futebol, atletismo, trampolins, ginástica e dança, como também para o Grupo de Debate, onde o foco é a consciencialização para questões fundamentais na sociedade.`,
+  activitiesTextTwo: `Também temos a Academia da Ciência, para experiências químicas; o Clube das Artes para moldagem de papel, pintura com guaches, recortes, leitura e cinema; a Hora do Planeta, onde o tempo é dedicado à separação do lixo, reciclagem, proteção da natureza e limpeza do meio ambiente envolvente. Há tempo para desporto, como futebol, atletismo, trampolins, ginástica e dança, como também para o Grupo de Debate, onde o foco é a consciencialização para questões fundamentais na sociedade.`,
 
   feedingTitle: `Alimentação`,
   feedingText: `A alimentação das crianças é garantida e financiada pela FKWL, com 3 refeições diárias durante o período de aulas (2 na escola e 1 no Centro) e todas as refeições no Centro durante o período de férias.`,
@@ -59,7 +58,7 @@ Também temos a Academia da Ciência, para experiências químicas; o Clube das 
 
   aboutText: `Por forma a possibilitar um futuro para estas crianças as áreas onde temos de intervir são imensas e por isso toda a ajuda é mais que bem-vinda e necessária.`,
   aboutCtaText: `Descobre como podes ajudar-nos`,
-  //Footer
+  // Footer
   footerColAboutUs: `Sobre nós`,
   footerColFindUs: `Vem Conhecer-nos`,
   footerColHelpUs: `Ajuda-nos`,
@@ -74,7 +73,7 @@ Também temos a Academia da Ciência, para experiências químicas; o Clube das 
   footerSponsorEmail: `@fromkiberawithlove.com`,
   footerTourEmail: `@fromkiberawithlove.com`,
 
-  //help us page
+  // help us page
   helpUsTitle: `Voluntários, colaboradores, parceiros, padrinhos que tornam este projeto uma realidade`,
 
   patronizeTitle: `Apadrinhamento`,
@@ -102,10 +101,9 @@ Também temos a Academia da Ciência, para experiências químicas; o Clube das 
   godfatherButton: `Apadrinhar`,
   volunteeringButton: `Voluntariar`,
 
-  //Find us page
+  // Find us page
   findusOne: `As portas do nosso centro estão sempre abertas para as crianças e suas famílias, mas também para todos que queiram conhecer o nosso projeto.`,
   findusTwo: `Para quem está de visita ao Quénia criamos uma tour solidária para descobrir o Quénia tal como ele é, in loco. Com passagem pelos principais pontos emblemáticos de Nairobi, sem deixar de parte o Orfanato dos Elefantes e o Girafe Center, estes dias inesquecíveis contam ainda com uma visita autêntica a Kibera. Como não podia deixar de ser, inclui o tão desejado safari africano com vista para o Kilimanjaro e ainda muitos mergulhos no Oceano Índico, sem deixar de fora os locais históricos de Mombasa. O melhor de tudo é a possibilidade de passarem uns dias no nosso centro, a conviver e a apaixonarem-se pelas crianças que apoiamos. `,
   findusCta: `Para saberes mais`,
-  findusEmail: `tour@fromkiberawithlove.com`,
-  volunteeringButton: `Voluntariar`
+  findusEmail: `tour@fromkiberawithlove.com`
 };

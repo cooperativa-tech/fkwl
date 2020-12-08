@@ -2,7 +2,6 @@ import React from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 
 import Cta from 'root/components/Cta';
-import Text from 'root/components/Text';
 import TextAbout from 'root/components/TextAbout';
 import TitleAbout from 'root/components/TitleAbout';
 import Header from 'root/components/Header';

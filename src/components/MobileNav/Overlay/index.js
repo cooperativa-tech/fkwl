@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import NavLink from '../../NavLink';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, useIntl } from 'react-intl';
 import SocialDetails from 'root/components/SocialDetails';
-import { useIntl } from 'react-intl';
+
+import NavLink from '../../NavLink';
 
 import './index.css';
 
@@ -13,7 +13,7 @@ const Overlay = () => {
   return (
     <>
       <div styleName="root">
-        <div styleName="hamburguer"></div>
+        <div styleName="hamburguer" />
 
         <div styleName="col two">
           <div styleName="xsmallSpacing">

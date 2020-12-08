@@ -21,8 +21,12 @@
   "scripts": {
     "dev": "gatsby develop",
     "build": "gatsby build",
-    "lint": "eslint src && stylelint 'src/**/*.css' --fix",
-    "lint-styles": "stylelint \"src/**/*.css\" \"src/**/*.scss\""
+    "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|json)\"",
+    "format": "yarn run prettier -- --write",
+    "check-format": "yarn run prettier -- --list-different",
+    "lint": " yarn run lint-js && yarn run lint-styles ",
+    "lint-styles": "stylelint \"src/**/*.css\" \"src/**/*.scss\" --fix",
+    "lint-js": "npx eslint . --fix"
   },
   "dependencies": {
     "babel-plugin-react-css-modules": "^5.2.6",
@@ -41,6 +45,8 @@
     "gatsby-plugin-sitemap": "^2.2.19",
     "gatsby-source-filesystem": "^2.1.33",
     "gatsby-transformer-sharp": "^2.3.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.2",
     "intersection-observer": "^0.7.0",
     "postcss-import": "^12.0.1",
     "postcss-modules": "^1.4.1",
