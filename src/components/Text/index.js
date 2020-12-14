@@ -11,7 +11,13 @@ const Text = ({ children, size }) => {
 
 Text.propTypes = {
   children: PropTypes.node.isRequired,
-  size: PropTypes.oneOf([Size.normal, Size.large])
+  size: PropTypes.oneOf([
+    Size.normal,
+    Size.medium,
+    Size.large,
+    Size.left,
+    Size.right
+  ])
 };
 
 export default Text;

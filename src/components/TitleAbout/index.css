@@ -21,6 +21,7 @@
 
 .large {
   width: calc(3 * var(--cell-length) + 2 * var(--gutter));
+  padding: var(--size-20);
 
   font-size: var(--size-32);
   line-height: var(--size-44);
@@ -29,6 +30,7 @@
   @media (min-width: 700px) {
     width: 100%;
     max-width: calc(11 * var(--cell-length) + 10 * var(--gutter));
+    padding: var(--size-132) var(--size-20);
 
     font-size: var(--size-44);
     line-height: var(--size-56);

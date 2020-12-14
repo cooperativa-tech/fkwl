@@ -1,8 +1,10 @@
 @import '../styles/variables.css';
 
 .textBlock {
-  max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
-  margin-bottom: var(--size-32);
+  @media (min-width: 700px) {
+    max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
+    margin-bottom: var(--size-32);
+  }
 }
 
 .bold {
@@ -38,6 +40,7 @@
 
   @media (min-width: 700px) {
     width: calc(9 * var(--cell-length) + 8 * var(--gutter));
+    margin: 0 auto;
   }
 }
 

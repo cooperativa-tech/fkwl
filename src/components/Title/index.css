@@ -2,7 +2,8 @@
 
 .root {
   width: 100%;
-  margin: 0 auto;
+
+  max-width: calc(4 * var(--cell-length) + 5 * var(--gutter));
 
   color: var(--color-grey);
 

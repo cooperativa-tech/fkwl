@@ -32,7 +32,7 @@
   width: 100%;
   max-width: calc(4 * var(--cell-length) + 3 * var(--gutter));
   margin-top: var(--size-32);
-  margin-bottom: 132px;
+  margin-bottom: var(--size-132);
 
   font-family: var(--font-family-nunito);
   font-size: var(--size-24);
@@ -43,6 +43,7 @@
     flex-direction: row;
     justify-content: space-between;
     max-width: calc(11 * var(--cell-length) + 10 * var(--gutter));
+    margin: 0 auto;
   }
 }
 

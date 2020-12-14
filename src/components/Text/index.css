@@ -3,7 +3,6 @@
 .root {
   width: 100%;
   max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
-  margin: 0 auto;
 
   color: var(--color-grey);
 
@@ -20,10 +19,46 @@
 }
 
 .normal {
-  max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
+  padding: 0 var(--size-20);
+
+  @media (min-width: 700px) {
+    max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
+    margin: 0 auto;
+  }
+}
+
+.medium {
+  @media (min-width: 700px) {
+    max-width: calc(9 * var(--cell-length) + 8 * var(--gutter));
+    margin-left: calc(1 * var(--cell-length) + 2 * var(--gutter));
+
+    font-size: var(--size-24);
+    line-height: var(--size-32);
+  }
+}
+
+.left {
+  @media (min-width: 700px) {
+    max-width: calc(9 * var(--cell-length) + 8 * var(--gutter));
+    margin-left: calc(1 * var(--cell-length) + 2 * var(--gutter));
+
+    font-size: var(--size-24);
+    line-height: var(--size-32);
+  }
+}
+
+.right {
+  @media (min-width: 700px) {
+    margin-right: calc(1 * var(--cell-length) + 2 * var(--gutter));
+
+    font-size: var(--size-24);
+    line-height: var(--size-32);
+  }
 }
 
 .large {
+  margin: 0 auto;
+
   font-size: var(--size-20);
   line-height: var(--size-24);
 
