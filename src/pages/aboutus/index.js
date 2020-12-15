@@ -2,7 +2,7 @@ import React from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 
 import Cta from 'root/components/Cta';
-import TextAbout from 'root/components/TextAbout';
+import Text from 'root/components/Text';
 import TitleAbout from 'root/components/TitleAbout';
 import Header from 'root/components/Header';
 import SEO from 'root/components/SEO';
@@ -45,8 +45,8 @@ const IndexPage = () => {
         </TitleAbout>
       </div>
 
-      <div styleName="widtherSection xxxlargeSpacing">
-        <TextAbout size={Size.large}>
+      <div styleName="widtherSection  xxxlargeSpacing">
+        <Text size={Size.left}>
           <div styleName="smallSpacing">
             <TitleAbout size={Size.normal}>
               <span styleName="coloredText yellow">
@@ -67,11 +67,11 @@ const IndexPage = () => {
               alt="kids playing spider man"
             />
           </div>
-        </TextAbout>
+        </Text>
       </div>
 
       <div styleName="widtherSection reverse xxxlargeSpacing">
-        <TextAbout size={Size.large}>
+        <Text size={Size.right}>
           <div styleName="smallSpacing">
             <TitleAbout size={Size.normal}>
               <span styleName="coloredText orange">
@@ -85,31 +85,33 @@ const IndexPage = () => {
           <div styleName="textBlock smallSpacing">
             <FormattedMessage id="activitiesTextTwo" />
           </div>
-        </TextAbout>
-        <img
-          styleName="activitiesImage"
-          src={activitiesOne}
-          alt="kids playing spider man"
-        />
-        <img
-          styleName="activitiesImageTwo"
-          src={activitiesTwo}
-          alt="kids playing spider man"
-        />
-        <img
-          styleName="activitiesImageThree"
-          src={activitiesThree}
-          alt="kids playing spider man"
-        />
-        <img
-          styleName="activitiesImageFour"
-          src={activitiesFour}
-          alt="kids playing spider man"
-        />
+        </Text>
+        <div styleName="activitiesImageWrapper">
+          <img
+            styleName="activitiesImage"
+            src={activitiesOne}
+            alt="kids playing spider man"
+          />
+          <img
+            styleName="activitiesImageTwo"
+            src={activitiesTwo}
+            alt="kids playing spider man"
+          />
+          <img
+            styleName="activitiesImageThree"
+            src={activitiesThree}
+            alt="kids playing spider man"
+          />
+          <img
+            styleName="activitiesImageFour"
+            src={activitiesFour}
+            alt="kids playing spider man"
+          />
+        </div>
       </div>
 
       <div styleName="widtherSection xxxlargeSpacing">
-        <TextAbout size={Size.large}>
+        <Text size={Size.medium}>
           <div styleName="smallSpacing">
             <TitleAbout size={Size.normal}>
               <span styleName="coloredText blue">
@@ -119,17 +121,19 @@ const IndexPage = () => {
           </div>
           <div styleName="textBlock smallSpacing">
             <FormattedMessage id="feedingText" />
-            <img
-              styleName="feedingImage"
-              src={foodOne}
-              alt="kids playing spider man"
-            />
           </div>
-        </TextAbout>
+        </Text>
+        <div styleName="feedingImageWrapper">
+          <img
+            styleName="feedingImage"
+            src={foodOne}
+            alt="kids playing spider man"
+          />
+        </div>
       </div>
 
       <div styleName="widtherSection reverse xxxlargeSpacing">
-        <TextAbout size={Size.large}>
+        <Text size={Size.medium}>
           <div styleName="smallSpacing">
             <TitleAbout size={Size.normal}>
               <span styleName="coloredText red">
@@ -140,21 +144,23 @@ const IndexPage = () => {
           <div styleName="textBlock smallSpacing">
             <FormattedMessage id="healthText" />
           </div>
-        </TextAbout>
-        <img
-          styleName="healthImage"
-          src={healthOne}
-          alt="kids playing spider man"
-        />
-        <img
-          styleName="healthImageTwo"
-          src={healthTwo}
-          alt="kids playing spider man"
-        />
+        </Text>
+        <div styleName="healthImageWrapper">
+          <img
+            styleName="healthImage"
+            src={healthOne}
+            alt="kids playing spider man"
+          />
+          <img
+            styleName="healthImageTwo"
+            src={healthTwo}
+            alt="kids playing spider man"
+          />
+        </div>
       </div>
 
       <div styleName="widtherSection xxxlargeSpacing">
-        <TextAbout size={Size.large}>
+        <Text size={Size.medium}>
           <div styleName="smallSpacing">
             <TitleAbout size={Size.normal}>
               <span styleName="coloredText yellow">
@@ -164,22 +170,24 @@ const IndexPage = () => {
           </div>
           <div styleName="textBlock smallSpacing">
             <FormattedMessage id="clothingText" />
-            <img
-              styleName="clothingImage"
-              src={clothesOne}
-              alt="kids playing spider man"
-            />
-            <img
-              styleName="clothingImageTwo"
-              src={clothesTwo}
-              alt="kids playing spider man"
-            />
           </div>
-        </TextAbout>
+        </Text>
+        <div styleName="clothingImageWrapper">
+          <img
+            styleName="clothingImage"
+            src={clothesOne}
+            alt="kids playing spider man"
+          />
+          <img
+            styleName="clothingImageTwo"
+            src={clothesTwo}
+            alt="kids playing spider man"
+          />
+        </div>
       </div>
 
       <div styleName="widtherSection reverse xxxlargeSpacing">
-        <TextAbout size={Size.large}>
+        <Text size={Size.medium}>
           <div styleName="smallSpacing">
             <TitleAbout size={Size.normal}>
               <span styleName="coloredText orange">
@@ -190,7 +198,7 @@ const IndexPage = () => {
           <div styleName="textBlock smallSpacing">
             <FormattedMessage id="familySupportText" />
           </div>
-        </TextAbout>
+        </Text>
         <div styleName="familySupportImageWrapper">
           <img
             styleName="familySupportImage"
@@ -206,7 +214,7 @@ const IndexPage = () => {
       </div>
 
       <div styleName="widtherSection xxlargeSpacing">
-        <TextAbout size={Size.large}>
+        <Text size={Size.medium}>
           <div styleName="smallSpacing">
             <TitleAbout size={Size.normal}>
               <span styleName="coloredText blue">
@@ -216,15 +224,15 @@ const IndexPage = () => {
           </div>
           <div styleName="textBlock smallSpacing">
             <FormattedMessage id="microCreditText" />
-            <div styleName="microCreditimageWrapper">
-              <img
-                styleName="microCreditImage"
-                src={microCreditOne}
-                alt="kids playing spider man"
-              />
-            </div>
           </div>
-        </TextAbout>
+        </Text>
+        <div styleName="microCreditimageWrapper">
+          <img
+            styleName="microCreditImage"
+            src={microCreditOne}
+            alt="kids playing spider man"
+          />
+        </div>
       </div>
 
       <div styleName="ctaSection">

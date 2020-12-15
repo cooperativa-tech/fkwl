@@ -61,8 +61,6 @@
   }
 
   &.two {
-
-    padding: var(--size-24) var(--size-20) 0;
     padding-top: var(--size-24);
 
     color: var(--color-light-grey);
@@ -85,8 +83,6 @@
   }
 
   &.three {
-    padding: var(--size-24) var(--size-20) 0;
-
     font-size: var(--size-24);
     font-weight: var(--font-weight-bold);
     line-height: var(--size-32);

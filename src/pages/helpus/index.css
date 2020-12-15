@@ -1,7 +1,19 @@
 @import '../../styles/variables.css';
 
+.root {
+  margin: 0 var(--size-20);
+  @media (min-width: 700px) {
+    max-width: calc(13 * var(--cell-length) + 14 * var(--gutter));
+    margin: 0 auto;
+  }
+}
+
 .bold {
   font-weight: var(--font-weight-bold);
+}
+
+.align {
+  text-align: left;
 }
 
 .button {
@@ -34,7 +46,7 @@
 }
 
 .coloredWrapper {
-  padding: var(--size-76) var(--size-20);
+  padding: var(--size-76) 0;
 
   &.paleRed {
     background: var(--color-pale-red);
@@ -57,7 +69,13 @@
 }
 
 .coloredSection {
+  padding: 0 var(--size-20);
+
   color: white;
+
+  @media (min-width: 700px) {
+    padding: 0;
+  }
 }
 
 .ctaSection {
@@ -81,6 +99,7 @@
 .xlargeSpacing {
   position: relative;
 
+  padding: var(--size-20);
   margin-bottom: var(--size-100);
 }
 
@@ -100,14 +119,14 @@
 
   &.volunteering {
     top: -300px;
-    right: -490px;
+    right: -650px;
 
     padding: var(--size-12);
   }
 
   &.partners {
     top: 227px;
-    left: -450px;
+    left: -650px;
 
     padding: var(--size-12);
   }

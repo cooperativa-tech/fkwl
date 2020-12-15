@@ -6,6 +6,7 @@ import Title from 'root/components/Title';
 import Cta from 'root/components/Cta';
 import Header from 'root/components/Header';
 import SEO from 'root/components/SEO';
+import Size from 'root/components/Text/size';
 /* eslint-disable */
 import homePageOne from '!file-loader!../assets/homePage/homePageOne.png';
 import homePageTwo from '!file-loader!../assets/homePage/homePageTwo.png';
@@ -26,8 +27,7 @@ const IndexPage = () => {
       />
 
       <Header />
-
-      <Text>
+      <Text size={Size.normal}>
         <div styleName="section xl">
           <FormattedMessage id="hello" />,
         </div>

@@ -27,7 +27,7 @@ const IndexPage = () => {
 
       <Header />
 
-      <div styleName="mediumSpacing">
+      <div styleName="xlargeSpacing">
         <Title size={Size.large}>
           <FormattedMessage id="helpUsTitle" />
         </Title>

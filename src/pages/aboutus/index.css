@@ -4,6 +4,16 @@
   font-weight: var(--font-weight-bold);
 }
 
+.activitiesImageWrapper {
+  position: relative;
+
+  margin-right: calc(2 * var(--cell-length) + 1 * var(--gutter));
+
+  @media (min-width: 700px) {
+    margin-left: calc(2 * var(--cell-length) + 1 * var(--gutter));
+  }
+}
+
 .coloredText {
   font-weight: var(--font-weight-bold);
 
@@ -45,28 +55,27 @@
 }
 
 .abtouUsTitle {
-  width: 100%;
-
   @media (min-width: 700px) {
     width: calc(5 * var(--cell-length) + 4 * var(--gutter));
-
-    text-align: center;
   }
 }
 
 .widtherSection {
+  position: relative;
+
   width: 100%;
+  padding: 0 var(--size-20);
   margin: var(--size-132);
 
   &.reverse {
     @media (min-width: 700px) {
       display: flex;
       flex-direction: row-reverse;
-      margin-left: calc(5 * var(--cell-length) + 4 * var(--gutter));
+      justify-content: space-between;
+      margin-left: calc(1 * var(--cell-length) + 4 * var(--gutter));
     }
 
     @media (min-width: 700px) {
-      width: calc(11 * var(--cell-length) + 10 * var(--gutter));
     }
   }
 }
@@ -96,10 +105,13 @@
 
   width: calc(4 * var(--cell-length) + 3 * var(--gutter));
   padding: 0 var(--size-20);
+  margin-right: var(--size-20);
   margin-bottom: var(--size-132);
+  margin-left: var(--size-20);
 
   @media (min-width: 700px) {
     width: calc(9 * var(--cell-length) + 8 * var(--gutter));
+    margin: 0 auto;
   }
 }
 
@@ -181,7 +193,9 @@
   @media (min-width: 700px) {
     position: absolute;
     top: -232px;
-    right: -306px;
+    right: -570px;
+
+    display: block;
 
     width: 276px;
   }
@@ -196,9 +210,8 @@
 
   @media (min-width: 700px) {
     position: absolute;
-
-    top: 20px;
-    right: -490px;
+    top: -28px;
+    right: -691px;
 
     display: block;
     width: 371px;
@@ -211,8 +224,8 @@
 
   @media (min-width: 700px) {
     position: absolute;
-    top: -87px;
-    left: -100px;
+    top: -15px;
+    left: 200px;
     z-index: 3;
 
     display: block;
@@ -234,7 +247,7 @@
   @media (min-width: 700px) {
     position: absolute;
     top: 58px;
-    left: -320px;
+    left: -50px;
     z-index: 2;
 
     display: block;
@@ -253,8 +266,8 @@
 
   @media (min-width: 700px) {
     position: absolute;
-    top: 410px;
-    left: -235px;
+    top: 362px;
+    left: 25px;
     z-index: 1;
 
     display: block;
@@ -271,8 +284,9 @@
 
   @media (min-width: 700px) {
     position: absolute;
-    bottom: -98px;
-    left: -84px;
+    bottom: -46px;
+    left: 150px;
+
     z-index: 0;
 
     display: block;
@@ -280,6 +294,13 @@
     width: 210px;
 
     overflow: hidden;
+  }
+}
+.feedingImageWrapper {
+  position: relative;
+
+  @media (min-width: 700px) {
+    margin-left: 300px;
   }
 }
 
@@ -293,17 +314,21 @@
 
   @media (min-width: 700px) {
     position: absolute;
-    position: absolute;
+    right: 240px;
 
-    top: -70px;
-    right: -440px;
+    bottom: -40px;
 
-    width: 371px;
+    width: 400px;
 
     margin-top: 0;
   }
 }
 
+.healthImageWrapper {
+  position: relative;
+
+  margin-right: calc(2 * var(--cell-length) + 1 * var(--gutter));
+}
 .healthImage {
   width: 276px;
 
@@ -314,7 +339,7 @@
   @media (min-width: 700px) {
     position: absolute;
     top: -87px;
-    left: -150px;
+    left: 240px;
 
     width: 276px;
   }
@@ -330,13 +355,20 @@
   @media (min-width: 700px) {
     position: absolute;
     top: 180px;
-    left: -190px;
+    left: 220px;
 
     display: block;
     width: 276px;
   }
 }
 
+.clothingImageWrapper {
+  position: relative;
+
+  @media (min-width: 700px) {
+    margin-left: calc(2 * var(--cell-length) + 1 * var(--gutter));
+  }
+}
 .clothingImage {
   right: -22px;
 
@@ -348,8 +380,8 @@
 
   @media (min-width: 700px) {
     position: absolute;
-    top: -78px;
-    right: -400px;
+    right: 240px;
+    bottom: 20px;
 
     width: 371px;
   }
@@ -360,10 +392,9 @@
 
   @media (min-width: 700px) {
     position: absolute;
-    position: absolute;
+    right: 220px;
 
-    top: 190px;
-    right: -490px;
+    bottom: -150px;
 
     display: block;
     width: 276px;
@@ -374,12 +405,13 @@
   position: relative;
 
   margin-bottom: 250px;
+  margin-left: calc(1 * var(--cell-length) + 1 * var(--gutter));
 }
 
 .familySupportImage {
   position: absolute;
   top: 14px;
-  left: -40px;
+  left: -110px;
 
   width: 371px;
 
@@ -389,8 +421,10 @@
   @media (min-width: 700px) {
     position: absolute;
     top: -78px;
-    left: -450px;
+    left: -25px;
     z-index: 1;
+
+    display: block;
 
     width: 371px;
   }
@@ -402,7 +436,7 @@
   @media (min-width: 700px) {
     position: absolute;
     top: 268px;
-    left: -370px;
+    left: -10px;
 
     z-index: 0;
 
@@ -413,10 +447,14 @@
 }
 
 .microCreditimageWrapper {
+  position: relative;
+
   margin-top: var(--size-12);
   margin-bottom: 500px;
+
   @media (min-width: 700px) {
     margin-bottom: 0;
+    margin-left: calc(3 * var(--cell-length) + 2 * var(--gutter));
   }
 }
 
@@ -432,14 +470,14 @@
 
   @media (min-width: 700px) {
     position: absolute;
-    position: absolute;
+    right: 240px;
 
-    top: -70px;
-    right: -440px;
+    bottom: 0px;
 
     width: 371px;
   }
 }
+
 .ctaImage {
   position: absolute;
   right: 0px;

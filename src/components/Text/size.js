@@ -1,4 +1,7 @@
 export default {
   normal: 'normal',
-  large: 'large'
+  medium: 'medium',
+  large: 'large',
+  left: 'left',
+  right: 'right'
 };
