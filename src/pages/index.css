@@ -60,7 +60,11 @@
 }
 
 .section1 {
-  width: 276px;
+
+  padding: var(--size-12);
+  overflow: visible;
+
+  transform: rotate(-9deg);
 
   @media (min-width: 700px) {
     position: absolute;
@@ -69,12 +73,19 @@
 
     width: 424px;
 
-    padding: var(--size-12);
+    background: rgba(0, 0, 0, 0.01);
   }
+}
+
+.section1:before {
+  background: rgba(0, 0, 0, 0.01);
+  filter: blur(44px);
 }
 
 .section2 {
   width: 276px;
+
+  transform: rotate(5deg);
 
   @media (min-width: 700px) {
     position: absolute;
@@ -94,6 +105,8 @@
 
   width: 210px;
   overflow: hidden;
+
+  transform: rotate(-20deg);
 
   @media (min-width: 700px) {
     top: -112px;
