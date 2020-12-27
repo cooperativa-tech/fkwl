@@ -46,7 +46,7 @@
 }
 
 .coloredWrapper {
-  padding: var(--size-76) 0;
+  padding: var(--size-76);
 
   &.paleRed {
     background: var(--color-pale-red);
@@ -116,19 +116,23 @@
 
   width: 412px;
   overflow: hidden;
+  padding: var(--size-8);
 
   &.volunteering {
-    top: -300px;
-    right: -650px;
+    transform: rotate(-9deg);
 
-    padding: var(--size-12);
+    top: -163px;
+    right: -451px;
   }
 
   &.partners {
+    transform: rotate(5deg);
     top: 227px;
-    left: -650px;
+    left: -510px;
+  }
 
-    padding: var(--size-12);
+  @media (min-width: 700px) {
+    padding: var(--size-20);
   }
 }
 

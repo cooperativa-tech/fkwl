@@ -1,20 +1,18 @@
 import React from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 import Text from 'root/components/Text';
 import Title from 'root/components/Title';
 import Header from 'root/components/Header';
 import SEO from 'root/components/SEO';
 import Size from 'root/components/Text/size';
-/* eslint-disable */
 import Button from 'root/components/Button';
-import volunteeringPortualOne from '!file-loader!../../assets/helpUs/volunteeringPortugalOne.png';
-import sponsersOne from '!file-loader!../../assets/helpUs/sponsersOne.png';
-/* eslint-enable */
 
 import './index.css';
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
   const { formatMessage } = useIntl();
 
   return (
@@ -87,11 +85,9 @@ const IndexPage = () => {
       </div>
 
       <div styleName="xlargeSpacing">
-        <img
-          styleName="image volunteering"
-          src={volunteeringPortualOne}
-          alt="kids playing spider man"
-        />
+        <div styleName="image volunteering">
+          <Img fluid={data.helpUsOne.childImageSharp.fluid} />
+        </div>
         <Text>
           <div styleName="smallSpacing">
             <Title size={Size.normal}>
@@ -104,11 +100,10 @@ const IndexPage = () => {
         </Text>
 
         <Text>
-          <img
-            styleName="image partners"
-            src={sponsersOne}
-            alt="kids playing spider man"
-          />
+          <div styleName="image partners">
+            <Img fluid={data.helpUsTwo.childImageSharp.fluid} />
+          </div>
+
           <div styleName="smallSpacing">
             <Title size={Size.normal}>
               <FormattedMessage id="partnersTitle" />
@@ -145,5 +140,24 @@ const IndexPage = () => {
     </>
   );
 };
+
+export const query = graphql`
+  query {
+    helpUsOne: file(relativePath: { regex: "/helpUs_01/" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    helpUsTwo: file(relativePath: { regex: "/helpUs_02/" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
 
 export default IndexPage;
