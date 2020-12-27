@@ -1,5 +1,6 @@
 import React from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
+import { graphql } from 'gatsby';
 
 import Cta from 'root/components/Cta';
 import Text from 'root/components/Text';
@@ -7,26 +8,11 @@ import TitleAbout from 'root/components/TitleAbout';
 import Header from 'root/components/Header';
 import SEO from 'root/components/SEO';
 import Size from 'root/components/Text/size';
-/* eslint-disable */
-import educationOne from '!file-loader!../../assets/aboutUs/educationOne.png';
-import educationTwo from '!file-loader!../../assets/aboutUs/educationTwo.png';
-import activitiesOne from '!file-loader!../../assets/aboutUs/activitiesOne.png';
-import activitiesTwo from '!file-loader!../../assets/aboutUs/activitiesTwo.png';
-import activitiesThree from '!file-loader!../../assets/aboutUs/activitiesThree.png';
-import activitiesFour from '!file-loader!../../assets/aboutUs/activitiesFour.png';
-import foodOne from '!file-loader!../../assets/aboutUs/foodOne.png';
-import healthOne from '!file-loader!../../assets/aboutUs/healthOne.png';
-import healthTwo from '!file-loader!../../assets/aboutUs/healthTwo.png';
-import clothesOne from '!file-loader!../../assets/aboutUs/clothesOne.png';
-import clothesTwo from '!file-loader!../../assets/aboutUs/clothesTwo.png';
-import familySupportOne from '!file-loader!../../assets/aboutUs/familySupportOne.png';
-import familySupportTwo from '!file-loader!../../assets/aboutUs/familySupportTwo.png';
-import microCreditOne from '!file-loader!../../assets/aboutUs/microCreditOne.png';
-/* eslint-enable */
+import Img from 'gatsby-image';
 
 import './index.css';
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
   const { formatMessage } = useIntl();
 
   return (
@@ -56,16 +42,13 @@ const IndexPage = () => {
           </div>
           <div styleName="textBlock smallSpacing">
             <FormattedMessage id="educationText" />
-            <img
-              styleName="educationImage"
-              src={educationOne}
-              alt="kids playing spider man"
-            />
-            <img
-              styleName="educationImageTwo"
-              src={educationTwo}
-              alt="kids playing spider man"
-            />
+
+            <div styleName="educationImage">
+              <Img fluid={data.educationOne.childImageSharp.fluid} />
+            </div>
+            <div styleName="educationImageTwo">
+              <Img fluid={data.educationTwo.childImageSharp.fluid} />
+            </div>
           </div>
         </Text>
       </div>
@@ -87,26 +70,18 @@ const IndexPage = () => {
           </div>
         </Text>
         <div styleName="activitiesImageWrapper">
-          <img
-            styleName="activitiesImage"
-            src={activitiesOne}
-            alt="kids playing spider man"
-          />
-          <img
-            styleName="activitiesImageTwo"
-            src={activitiesTwo}
-            alt="kids playing spider man"
-          />
-          <img
-            styleName="activitiesImageThree"
-            src={activitiesThree}
-            alt="kids playing spider man"
-          />
-          <img
-            styleName="activitiesImageFour"
-            src={activitiesFour}
-            alt="kids playing spider man"
-          />
+          <div styleName="activitiesImage">
+            <Img fluid={data.activitiesOne.childImageSharp.fluid} />
+          </div>
+          <div styleName="activitiesImageTwo">
+            <Img fluid={data.activitiesTwo.childImageSharp.fluid} />
+          </div>
+          <div styleName="activitiesImageThree">
+            <Img fluid={data.activitiesThree.childImageSharp.fluid} />
+          </div>
+          <div styleName="activitiesImageFour">
+            <Img fluid={data.activitiesFour.childImageSharp.fluid} />
+          </div>
         </div>
       </div>
 
@@ -124,11 +99,9 @@ const IndexPage = () => {
           </div>
         </Text>
         <div styleName="feedingImageWrapper">
-          <img
-            styleName="feedingImage"
-            src={foodOne}
-            alt="kids playing spider man"
-          />
+          <div styleName="feedingImage">
+            <Img fluid={data.foodOne.childImageSharp.fluid} />
+          </div>
         </div>
       </div>
 
@@ -146,16 +119,12 @@ const IndexPage = () => {
           </div>
         </Text>
         <div styleName="healthImageWrapper">
-          <img
-            styleName="healthImage"
-            src={healthOne}
-            alt="kids playing spider man"
-          />
-          <img
-            styleName="healthImageTwo"
-            src={healthTwo}
-            alt="kids playing spider man"
-          />
+          <div styleName="healthImage">
+            <Img fluid={data.healthOne.childImageSharp.fluid} />
+          </div>
+          <div styleName="healthImageTwo">
+            <Img fluid={data.healthTwo.childImageSharp.fluid} />
+          </div>
         </div>
       </div>
 
@@ -173,16 +142,12 @@ const IndexPage = () => {
           </div>
         </Text>
         <div styleName="clothingImageWrapper">
-          <img
-            styleName="clothingImage"
-            src={clothesOne}
-            alt="kids playing spider man"
-          />
-          <img
-            styleName="clothingImageTwo"
-            src={clothesTwo}
-            alt="kids playing spider man"
-          />
+          <div styleName="clothingImage">
+            <Img fluid={data.clothesOne.childImageSharp.fluid} />
+          </div>
+          <div styleName="clothingImageTwo">
+            <Img fluid={data.clothesTwo.childImageSharp.fluid} />
+          </div>
         </div>
       </div>
 
@@ -200,16 +165,12 @@ const IndexPage = () => {
           </div>
         </Text>
         <div styleName="familySupportImageWrapper">
-          <img
-            styleName="familySupportImage"
-            src={familySupportOne}
-            alt="kids playing spider man"
-          />
-          <img
-            styleName="familySupportImageTwo"
-            src={familySupportTwo}
-            alt="kids playing spider man"
-          />
+          <div styleName="familySupportImage">
+            <Img fluid={data.familySupportOne.childImageSharp.fluid} />
+          </div>
+          <div styleName="familySupportImageTwo">
+            <Img fluid={data.familySupportTwo.childImageSharp.fluid} />
+          </div>
         </div>
       </div>
 
@@ -227,26 +188,124 @@ const IndexPage = () => {
           </div>
         </Text>
         <div styleName="microCreditimageWrapper">
-          <img
-            styleName="microCreditImage"
-            src={microCreditOne}
-            alt="kids playing spider man"
-          />
+          <div styleName="microCreditImage">
+            <Img fluid={data.microCreditOne.childImageSharp.fluid} />
+          </div>
         </div>
       </div>
 
       <div styleName="ctaSection">
         <Cta>
           <FormattedMessage id="aboutCtaText" />
-          <img
-            styleName="ctaImage"
-            src={clothesTwo}
-            alt="kids playing spider man"
-          />
+          <div styleName="ctaImage">
+            <Img fluid={data.clothesTwo.childImageSharp.fluid} />
+          </div>
         </Cta>
       </div>
     </>
   );
 };
+export const query = graphql`
+  query {
+    activitiesOne: file(relativePath: { regex: "/activities_01/" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    activitiesTwo: file(relativePath: { regex: "/activities_02/" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    activitiesThree: file(relativePath: { regex: "/activities_03/" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    activitiesFour: file(relativePath: { regex: "/activities_04/" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    educationOne: file(relativePath: { regex: "/education_01/" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    educationTwo: file(relativePath: { regex: "/education_02/" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    foodOne: file(relativePath: { regex: "/food_01/" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    healthOne: file(relativePath: { regex: "/health_01/" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    healthTwo: file(relativePath: { regex: "/health_02/" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    clothesOne: file(relativePath: { regex: "/clothes_01/" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    clothesTwo: file(relativePath: { regex: "/clothes_02/" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    familySupportOne: file(relativePath: { regex: "/family_support_01/" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    familySupportTwo: file(relativePath: { regex: "/family_support_02/" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    microCreditOne: file(relativePath: { regex: "/microcredit_01/" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
 
 export default IndexPage;

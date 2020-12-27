@@ -64,6 +64,7 @@
   position: relative;
 
   width: 100%;
+  max-width: calc(13 * var(--cell-length) + 14 * var(--gutter));
   padding: 0 var(--size-20);
   margin: var(--size-132);
 
@@ -73,9 +74,6 @@
       flex-direction: row-reverse;
       justify-content: space-between;
       margin-left: calc(1 * var(--cell-length) + 4 * var(--gutter));
-    }
-
-    @media (min-width: 700px) {
     }
   }
 }
@@ -130,7 +128,7 @@
 
     width: 424px;
 
-    padding: var(--size-12);
+    padding: var(--size-20);
   }
 }
 
@@ -193,25 +191,28 @@
   @media (min-width: 700px) {
     position: absolute;
     top: -232px;
-    right: -570px;
+    right: -480px;
 
     display: block;
 
     width: 276px;
+
+    transform: rotate(-10deg);
   }
 }
 
 .educationImageTwo {
   width: 276px;
-
-  padding: var(--size-12);
-
+  padding: var(--size-20);
+  margin-top: 56px;
   overflow: hidden;
+
+  transform: rotate(15deg);
 
   @media (min-width: 700px) {
     position: absolute;
-    top: -28px;
-    right: -691px;
+    top: 26px;
+    right: -612px;
 
     display: block;
     width: 371px;
@@ -224,30 +225,29 @@
 
   @media (min-width: 700px) {
     position: absolute;
-    top: -15px;
-    left: 200px;
+    top: -90px;
+    left: 60px;
     z-index: 3;
 
     display: block;
-
     width: 210px;
+    padding: var(--size-20);
 
-    padding: var(--size-12);
+    transform: rotate(-20deg);
   }
 }
 
 .activitiesImageTwo {
   width: 276px;
-
-  padding: var(--size-12);
+  padding: var(--size-20);
   overflow: hidden;
 
-  transform: rotate(-35deg);
+  transform: rotate(-10deg);
 
   @media (min-width: 700px) {
     position: absolute;
     top: 58px;
-    left: -50px;
+    left: -220px;
     z-index: 2;
 
     display: block;
@@ -255,37 +255,39 @@
 
     overflow: hidden;
 
-    transform: rotate(0deg);
+    transform: rotate(10deg);
   }
 }
 
 .activitiesImageThree {
   display: none;
 
-  padding: var(--size-12);
+  padding: var(--size-20);
 
   @media (min-width: 700px) {
     position: absolute;
-    top: 362px;
-    left: 25px;
+    top: 440px;
+    left: -135px;
     z-index: 1;
 
     display: block;
     width: 276px;
 
     overflow: hidden;
+
+    transform: rotate(-10deg);
   }
 }
 
 .activitiesImageFour {
   display: none;
 
-  padding: var(--size-12);
+  padding: var(--size-20);
 
   @media (min-width: 700px) {
     position: absolute;
-    bottom: -46px;
-    left: 150px;
+    bottom: -150px;
+    left: 60px;
 
     z-index: 0;
 
@@ -294,6 +296,8 @@
     width: 210px;
 
     overflow: hidden;
+
+    transform: rotate(-15deg);
   }
 }
 .feedingImageWrapper {
@@ -307,19 +311,20 @@
 .feedingImage {
   width: 400px;
 
-  padding: var(--size-12);
+  padding: var(--size-20);
 
   margin-top: var(--size-100);
   overflow: hidden;
 
+  transform: rotate(15deg);
+
   @media (min-width: 700px) {
     position: absolute;
-    right: 240px;
+    right: 52px;
 
     bottom: -40px;
 
     width: 400px;
-
     margin-top: 0;
   }
 }
@@ -332,14 +337,18 @@
 .healthImage {
   width: 276px;
 
-  padding: var(--size-12);
+  padding: var(--size-20);
+
   margin-bottom: 32px;
   overflow: hidden;
+
+  transform: rotate(-5deg);
 
   @media (min-width: 700px) {
     position: absolute;
     top: -87px;
-    left: 240px;
+    left: 75px;
+    z-index: 0;
 
     width: 276px;
   }
@@ -349,16 +358,20 @@
   display: none;
   width: 412px;
 
-  padding: var(--size-12);
+  padding: var(--size-20);
+
   overflow: hidden;
 
   @media (min-width: 700px) {
     position: absolute;
     top: 180px;
-    left: 220px;
+    left: 60px;
+    z-index: -1;
 
     display: block;
     width: 276px;
+
+    transform: rotate(-15deg);
   }
 }
 
@@ -373,14 +386,17 @@
   right: -22px;
 
   width: 276px;
-  padding: var(--size-12);
+  padding: var(--size-20);
+
   margin-top: var(--size-32);
   margin-left: var(--size-44);
   overflow: hidden;
 
+  transform: rotate(10deg);
+
   @media (min-width: 700px) {
     position: absolute;
-    right: 240px;
+    right: 36px;
     bottom: 20px;
 
     width: 371px;
@@ -392,13 +408,15 @@
 
   @media (min-width: 700px) {
     position: absolute;
-    right: 220px;
+    right: 120px;
 
-    bottom: -150px;
+    bottom: -198px;
 
     display: block;
     width: 276px;
-    padding: var(--size-12);
+    padding: var(--size-20);
+
+    transform: rotate(20deg);
   }
 }
 .familySupportImageWrapper {
@@ -411,22 +429,28 @@
 .familySupportImage {
   position: absolute;
   top: 14px;
-  left: -110px;
 
-  width: 371px;
+  left: -171px;
 
-  padding: var(--size-12);
+  width: 345px;
+
+  padding: var(--size-20);
+
   overflow: hidden;
+
+  transform: rotate(-10deg);
 
   @media (min-width: 700px) {
     position: absolute;
     top: -78px;
-    left: -25px;
+    left: -120px;
     z-index: 1;
 
     display: block;
 
     width: 371px;
+
+    transform: rotate(10deg);
   }
 }
 
@@ -442,7 +466,9 @@
 
     display: block;
     width: 276px;
-    padding: var(--size-12);
+    padding: var(--size-20);
+
+    transform: rotate(-10deg);
   }
 }
 
@@ -460,18 +486,18 @@
 
 .microCreditImage {
   position: absolute;
-
-  right: -36px;
+  right: 0px;
 
   width: 302px;
-
-  padding: var(--size-12);
+  padding: var(--size-20);
   overflow: hidden;
+
+  transform: rotate(15deg);
 
   @media (min-width: 700px) {
     position: absolute;
-    right: 240px;
 
+    right: 52px;
     bottom: 0px;
 
     width: 371px;
@@ -485,11 +511,10 @@
   bottom: -77px;
 
   width: 210px;
-
-  padding: var(--size-12);
+  padding: var(--size-20);
   overflow: hidden;
 
-  transform: rotate(-35deg);
+  transform: rotate(-20deg);
 
   @media (min-width: 700px) {
     display: none;
