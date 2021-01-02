@@ -1,8 +1,13 @@
 @import '../../styles/variables.css';
 
 .textBlock {
-  max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
-  margin-bottom: var(--size-32);
+  padding: 0 var(--size-20);
+
+  @media (min-width: 700px) {
+    max-width: calc(7 * var(--cell-length) + 6 * var(--gutter));
+    padding: 0;
+    margin-bottom: var(--size-32);
+  }
 }
 
 .coloredWrapper {
