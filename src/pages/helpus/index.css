@@ -115,20 +115,22 @@
   position: absolute;
 
   width: 412px;
-  overflow: hidden;
   padding: var(--size-8);
+  overflow: hidden;
 
   &.volunteering {
-    transform: rotate(-9deg);
 
     top: -163px;
     right: -451px;
+
+    transform: rotate(-9deg);
   }
 
   &.partners {
-    transform: rotate(5deg);
     top: 227px;
     left: -510px;
+
+    transform: rotate(5deg);
   }
 
   @media (min-width: 700px) {

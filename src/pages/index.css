@@ -60,9 +60,10 @@
 }
 
 .section1 {
-
   padding: var(--size-12);
   overflow: visible;
+
+  transform: rotate(-9deg);
 
   transform: rotate(-9deg);
 

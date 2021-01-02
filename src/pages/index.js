@@ -1,6 +1,7 @@
 import React from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 import Text from 'root/components/Text';
 import Title from 'root/components/Title';
@@ -8,7 +9,6 @@ import Cta from 'root/components/Cta';
 import Header from 'root/components/Header';
 import SEO from 'root/components/SEO';
 import Size from 'root/components/Title/size';
-import Img from 'gatsby-image';
 
 import './index.css';
 
