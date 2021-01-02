@@ -9,6 +9,8 @@ import Overlay from './Overlay';
 
 /* eslint-disable */
 import logoNavbar from '!file-loader!../../assets/logoNavbar.svg';
+import hamburguer from '!file-loader!../../assets/icons/hamburguer.png';
+import closeIcon from '!file-loader!../../assets/icons/closeIcon.png';
 /* eslint-enable */
 
 import './index.css';
@@ -55,6 +57,19 @@ const MobileNav = () => {
   return (
     <>
       <div styleName="nav">
+        <div
+          tabIndex={0}
+          role="button"
+          styleName="hamburguer"
+          onClick={handleClick}
+          onKeyDown={handleClick}
+        >
+          {showMenu ? (
+            <img src={closeIcon} alt="Close Icon" />
+          ) : (
+            <img src={hamburguer} alt="hamburguer Menu" />
+          )}
+        </div>
         <div styleName="logoWrapper">
           <div styleName="logo">
             <Link to="/">
@@ -62,15 +77,6 @@ const MobileNav = () => {
             </Link>
           </div>
           <div styleName="link">{!showMenu ? <Helpus /> : <Language />}</div>
-        </div>
-        <div
-          tabIndex={0}
-          role="button"
-          onClick={handleClick}
-          onKeyDown={handleClick}
-          styleName={`menuButton ${showMenu ? 'open' : ''}`}
-        >
-          <div styleName="menuBurguer" />
         </div>
 
         <nav styleName="wrapper">{showMenu && <Overlay />}</nav>
