@@ -39,6 +39,8 @@
 }
 
 .logoWrapper {
+  position: relative;
+
   display: flex;
   align-items: center;
 }
@@ -93,4 +95,71 @@
   @media (min-width: 700px) {
     font-size: var(--size-24);
   }
+}
+
+.menuButton {
+  position: absolute;
+  top: 62px;
+  right: 20px;
+
+  width: var(--size-44);
+  height: var(--size-44);
+
+  cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.menuBurguer {
+  width: var(--size-24);
+  height: var(--size-4);
+
+  background: var(--color-black);
+  border-radius: var(--size-4);
+
+  transition: all 0.2s ease-in-out;
+}
+
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuBurguer::before,
+.menuBurguer::after {
+  content: '';
+
+  position: absolute;
+
+  width: var(--size-24);
+  height: var(--size-4);
+
+  background: var(--color-black);
+  border-radius: var(--size-4);
+
+  transition: all 0.2s ease-in-out;
+}
+
+.menuBurguer::before {
+  transform: translateY(calc(-1 * var(--size-8)));
+}
+
+.menuBurguer::after {
+  transform: translateY(var(--size-8));
+}
+
+.menuButton.open .menuBurguer {
+  background: transparent;
+  box-shadow: none;
+
+  transform: translateX(-50px);
+}
+
+.menuButton.open .menuBurguer::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menuButton.open .menuBurguer::after {
+  transform: rotate(-45deg) translate(35px, 35px);
 }
