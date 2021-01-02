@@ -1,5 +1,7 @@
 import React from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 import Text from 'root/components/Text';
 import Header from 'root/components/Header';
@@ -7,13 +9,9 @@ import Gallery from 'root/components/Gallery';
 import SEO from 'root/components/SEO';
 import Size from 'root/components/Text/size';
 
-/* eslint-disable */
-import spiderManAndFriends from '!file-loader!../../assets/photoKidFkwl.jpg';
-/* eslint-enable */
-
 import './index.css';
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
   const { formatMessage } = useIntl();
 
   return (
@@ -26,15 +24,15 @@ const IndexPage = () => {
 
       <Header />
 
-      <div styleName="xlargeSpacing imageWrapper">
-        <img
-          styleName="image"
-          src={spiderManAndFriends}
-          alt="kids playing spider man"
-        />
-      </div>
-
       <Text>
+        <div styleName="xlargeSpacing imageWrapper">
+          <div styleName="image">
+            <Img
+              alt="kids playing spider man"
+              fluid={data.findUs.childImageSharp.fluid}
+            />
+          </div>
+        </div>
         <div styleName="textBlock">
           <FormattedMessage id="findusOne" />
         </div>
@@ -59,5 +57,17 @@ const IndexPage = () => {
     </>
   );
 };
+
+export const query = graphql`
+  query {
+    findUs: file(relativePath: { regex: "/photoKidFkwl/" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
 
 export default IndexPage;
